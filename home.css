@@ -316,3 +316,135 @@ padding: 0 60px;
       font-size: 40px;
       color: white;
     }
+.slide1 {
+    background: url("./assets/images/pexels-pripicart-620335.jpg") no-repeat center center / cover;
+}
+
+  .slide2 {
+    background: url("./assets/images/pexels-giovanni-spoletini-311699-12261472.jpg") no-repeat center center / cover;
+  }
+  .slide3 {
+    background: url("./assets/images/pexels-noblursbyshivam-7051333.jpg") no-repeat center center / cover;
+  }
+.logosmallscreens{
+    display: none;
+}
+.top60{
+    top: 60vh;
+}
+.tetonbannersmallscreens{
+    display: none;
+}
+@media (max-width:1280px){
+    .slide1 {
+    background: url("./assets/images/pexels-tima-miroshnichenko-6169056.jpg") no-repeat center center / cover;
+  }  
+    .slide2 {
+    background: url("./assets/images/pexels-tima-miroshnichenko-6169056.jpg") no-repeat center center / cover;
+  }  
+    .slide3 {
+    background: url("./assets/images/pexels-tima-miroshnichenko-6169056.jpg") no-repeat center center / cover;
+  }  
+}
+@media (max-width: 980px) {
+  .slide1 {
+    background: url("./assets/images/Mobile/firstphone.jpg") no-repeat center center / cover;
+  }
+  .slide2 {
+    background: url("./assets/images/Mobile/secondphone.jpg") no-repeat center center / cover;
+  }
+  .slide3 {
+    background: url("./assets/images/Mobile/thirdphone.jpg") no-repeat center center / cover;
+  }
+  header{
+    height: 200px;
+    background-color: black;
+  }
+  .logobigscreen{
+    display: none;
+  }
+  .logosmallscreens{
+    display: block;
+  }
+.leftheader img{
+    max-height: 110px ;  
+}
+.leftheader ul{
+    display: none;
+}
+header{
+    border: none;
+}
+.businessolutions{
+display: none;
+}
+.rightbigscreens{
+    display: none;}
+.rightsmallscreens ul{
+    color: white;
+    font-size: 50px;
+    gap: 55px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+display: none;
+}
+.textonbanner{
+width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+left: 0;
+top: 0vh;
+height: 91vh;
+position: relative;
+}
+    .swiper {
+      width: 100%;
+      height: 91vh; 
+    }
+    .textonbanner h1,.textonbanner p, .textonbanner button{
+        display: none;
+    }
+    .tetonbannersmallscreens{
+        width: 90%;
+        height: 40%;
+        background-color: #07206a;
+        position: absolute;
+        bottom: 5%;
+        border-radius: 50px;
+        background-color: rgba(51, 51, 51, 0.80);
+  backdrop-filter: blur(8px); 
+  padding: 90px;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+    }
+    .tetonbannersmallscreens h1,.tetonbannersmallscreens p, .tetonbannersmallscreens button{
+        display: block;
+    }
+    .tetonbannersmallscreens h1{
+        font-size: 80px;
+        text-align: left;
+        width: 100%;
+    }
+    .tetonbannersmallscreens p{
+        font-size: 40px;
+        font-weight: lighter;
+        margin-top: 40px;
+    }
+    .tetonbannersmallscreens button{
+        width: 100%;
+        height: 150px;
+        margin-top: 50px;
+        border-radius: 35px;
+        font-size: 40px;
+
+    }
+}
+
+ 
