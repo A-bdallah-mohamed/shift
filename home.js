@@ -4,6 +4,9 @@ const personalactive = document.getElementById("personalactive")
 const businessactive = document.getElementById("businessactive")
 const first = document.getElementById("first")
 const scnd = document.getElementById("scnd")
+const firstphone = document.getElementById("firstphone")
+const scndphone = document.getElementById("scndphone")
+
 
 togglepersonal.addEventListener("click", () => {
     personalactive.style.opacity = "1"
@@ -13,6 +16,8 @@ togglepersonal.addEventListener("click", () => {
 scnd.classList.add("hide");
 first.classList.remove("hide");
 console.log("personal toggled")
+firstphone.classList.remove("hide")
+scndphone.classList.add("hide")
 })
 
 togglebusiness.addEventListener("click", () => {
@@ -23,7 +28,8 @@ togglebusiness.addEventListener("click", () => {
 first.classList.add("hide");
 scnd.classList.remove("hide");
 console.log("business toggled")
-
+firstphone.classList.add("hide")
+scndphone.classList.remove("hide")
 })
 
 const swiper = new Swiper('.swiper', {
