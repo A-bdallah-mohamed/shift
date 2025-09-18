@@ -448,7 +448,7 @@ transform: translateY(-100px)translateX(50px);
 }
 .availableat{
   bottom: 0;
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 10px;
 }
