@@ -48,3 +48,20 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+
+
+
+const carSwiper = new Swiper('.car-swiper', {
+  slidesPerView: 2.5,
+  spaceBetween: 20,
+  loop: true,
+  navigation: {
+    nextEl: '.car-swiper .car_swiper-button-next',
+    prevEl: '.car-swiper .car_swiper-button-prev',
+  },
+  pagination: {
+    el: '.car-swiper .swiper-pagination',
+    clickable: true,
+  },
+});
+
