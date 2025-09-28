@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WindowsCustomizations>
+  <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0">
+    <ID>{486ea192-311b-4e7e-9ae1-9ca895470408}</ID>
+    <Name>test</Name>
+    <Version>1.2</Version>
+    <OwnerType>OEM</OwnerType>
+    <Rank>0</Rank>
+    <Notes />
+  </PackageConfig>
+  <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning">
+    <Customizations>
+      <Common>
+        <Accounts>
+          <ComputerAccount>
+            <Account>gen-c.com\support</Account>
+            <ComputerName>Numemp-%SERIAL%</ComputerName>
+            <DomainName>gen-c.com</DomainName>
+            <Password>@#ITSupport2020</Password>
+          </ComputerAccount>
+        </Accounts>
+        <ConnectivityProfiles>
+          <WLAN>
+            <WLANSetting>
+              <WLANConfig SSID="Generation C">
+                <WLANXmlSettings>
+                  <SecurityKey>Genc@2021! </SecurityKey>
+                  <SecurityType>WPA2-Personal</SecurityType>
+                </WLANXmlSettings>
+              </WLANConfig>
+            </WLANSetting>
+          </WLAN>
+        </ConnectivityProfiles>
+        <OOBE>
+          <Desktop>
+            <HideOobe>True</HideOobe>
+          </Desktop>
+        </OOBE>
+        <Policies>
+          <ApplicationManagement>
+            <AllowAllTrustedApps>Yes</AllowAllTrustedApps>
+          </ApplicationManagement>
+        </Policies>
+        <ProvisioningCommands>
+          <PrimaryContext>
+            <Command>
+              <CommandConfig Name="winrar">
+                <CommandFile>C:\Users\abdallah.samir\Desktop\Pro\winrar-x64-710b2.exe</CommandFile>
+                <CommandLine>cmd /c "winrar-x64-710b2.exe" /S</CommandLine>
+                <ContinueInstall>True</ContinueInstall>
+                <RestartRequired>False</RestartRequired>
+                <ReturnCodeRestart>3010</ReturnCodeRestart>
+                <ReturnCodeSuccess>0</ReturnCodeSuccess>
+              </CommandConfig>
+              <CommandConfig Name="anydesk">
+                <CommandFile>C:\Users\abdallah.samir\Desktop\Pro\AnyDesk (2).exe</CommandFile>
+                <CommandLine>cmd /c "anydesk (2).exe" --install --silent</CommandLine>
+                <ContinueInstall>True</ContinueInstall>
+                <RestartRequired>False</RestartRequired>
+                <ReturnCodeRestart>3010</ReturnCodeRestart>
+                <ReturnCodeSuccess>0</ReturnCodeSuccess>
+              </CommandConfig>
+              <CommandConfig Name="Google Chrome">
+                <CommandFile>C:\Users\abdallah.samir\Desktop\Pro\ChromeSetup.exe</CommandFile>
+                <CommandLine>cmd /c "chromesetup.exe" /silent /install</CommandLine>
+                <ContinueInstall>True</ContinueInstall>
+                <RestartRequired>False</RestartRequired>
+                <ReturnCodeRestart>3010</ReturnCodeRestart>
+                <ReturnCodeSuccess>0</ReturnCodeSuccess>
+              </CommandConfig>
+              <CommandConfig Name="Teamsse">
+                <CommandFile>C:\Users\abdallah.samir\Desktop\Pro\MSTeamsSetup.exe</CommandFile>
+                <CommandLine>cmd /c "msteamssetup.exe" -s</CommandLine>
+                <ContinueInstall>True</ContinueInstall>
+                <RestartRequired>False</RestartRequired>
+                <ReturnCodeRestart>3010</ReturnCodeRestart>
+                <ReturnCodeSuccess>0</ReturnCodeSuccess>
+              </CommandConfig>
+            </Command>
+          </PrimaryContext>
+        </ProvisioningCommands>
+      </Common>
+    </Customizations>
+  </Settings>
+</WindowsCustomizations>

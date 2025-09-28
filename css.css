@@ -2,10 +2,6 @@
 font-family: "Roboto", sans-serif;
 }
 
-.sq-img{
-aspect-ratio: 1/1;
-  object-fit: cover;
-}
 
 header{
   height: 80px;
@@ -16,7 +12,7 @@ header{
 .textonmainbanner{
 color: white;
 }
-.swiper-slide{
+.mainswiperslide{
   height: 100vh;
     width: 100%;
     display: flex;
@@ -42,6 +38,9 @@ font-size: 17px;
 }
 .end{
   justify-content: end;
+}
+.nav-item .nav-link{
+  padding: 10px 20px;
 }
 .toggletabs .nav-link.active:hover {
   background-color: #202e42;
@@ -125,4 +124,204 @@ color: #07206a;
   background-color: white;
   width: 8px;
   height: 8px;
+  transition: 0.3s ease all;
+}
+.swiper-pagination-bullet-active{
+    border-radius: 50px;
+  background-color: white;
+  width: 16px;
+  height: 8px;
+}
+.feature i{
+width: 60px;
+height: 60px;
+background-color: #0e2e5d18;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 9px;
+font-size: 25px;
+color: #082b5a;
+}
+.flex110{
+display: flex;
+flex: 1 1 0%;
+}
+
+.bg-img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  min-height: 260px;
+  max-width: 100%;
+}
+
+.itemcontent{
+
+  padding: 40px 24px;
+    position: relative;
+    flex: 1;
+}
+.itemscontainer{
+      display: flex; 
+    gap: 16px; 
+    flex-wrap: wrap;
+}
+p{
+  margin: 0;
+}
+.itemscontainer .item{
+      display: flex; 
+    background: #f7f7f7; 
+    border-radius: 12px; 
+    border: 1px solid #e4e4e5; 
+    overflow: hidden; 
+    flex: 1;
+}
+h2{
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--neutral-gray-900);
+}
+
+.Reason{
+  border: 1px solid #e7e7e7;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.Reason img,.reasoncontent{
+  text-align: center;
+  color: #082879;
+  object-fit: cover;
+  max-height: 50%;
+  padding: 20px;
+}
+.reasoncontent p{
+  font-size: 19px;
+  padding: 0 30px;
+}
+.big-Title{
+  font-size: 60px;
+  font-weight: 700;
+}
+.spacepage{
+padding:  100px 0 50px 0;
+}
+.spacecomponent{
+margin-top: 50px;
+}
+.widebutton{
+  background-color: #082879;
+  color: white;
+  border: none;
+  border-radius: 12px;
+}
+.joinus {
+  color: #082879;
+}
+.joinus p{
+opacity: 1;
+}
+.joinus p span{
+opacity: 0.5;
+}
+.joinus input{
+  border: none;
+  background-color: #f7f7f7;
+  padding: 10px 60px 10px 10px;
+  border-radius: 12px;
+}
+.joinus input::placeholder{
+  color: #07206a;  
+}
+.filter p{
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.308);
+}
+.jobcard{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e7e7e7;
+  border-radius: 12px;
+  padding: 20px 15px;
+}
+.jobcard h2{
+  font-size: 25px;
+}
+.jobcategorie p{
+  background-color: #efda08;
+  border-radius: 50px;
+  padding: 5px 15px;
+  color: black;
+  font-weight: 400;
+}
+.jobcategorie i{
+  color: black;
+}
+
+.ouroffice p{
+  padding: 0px 250px;
+}
+.officecontainer{
+  border-radius: 0 0 10px 10px;
+}
+.officecontainer:hover img{
+  transform: rotate(2deg) scale(1.1);
+}
+.officecontainer img{
+  aspect-ratio: 2/1;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  transition: 0.3s ease all;
+}
+.officecontainer .imgcontainer{
+  overflow: hidden;
+}
+.officecontent{
+  transform: translateY(-12px);
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  justify-content: space-between;
+  gap: 5px;
+}
+.officecontent p{
+  padding: 0;
+}
+.officetags p{
+  background-color: #eef0fc;
+  padding: 5px 15px;
+  border-radius: 50px;
+}
+.whychooseshift{
+  width: 100%;
+}
+.accordionitem{
+  border: 1px solid #dedede;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  overflow: auto;
+}
+.accordion-button:not(.collapsed) {
+  color: inherit;      
+  border: 1px solid #dedede;
+  outline: none;
+  background-color: inherit;
+}
+.accordion-button .show{
+  border: none;
+  outline: none;
+}
+
+.accordion {
+  --bs-accordion-btn-focus-border-color: inherit; 
+  --bs-accordion-btn-focus-box-shadow: inherit;
 }
