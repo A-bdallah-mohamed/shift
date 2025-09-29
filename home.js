@@ -1,18 +1,34 @@
-const swiper = new Swiper(".swiper", {
+const main_swiper = new Swiper(".mainswiper", {
   loop: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".main_swiper-pagination",
     clickable: true,
   },
     pagination: {
-    el: ".swiper-pagination",
+    el: ".main_pagination",
     clickable: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".main_prev",
+    prevEl: ".main_next",
   },
 });
+
+
+
+const secondary = new Swiper(".secondary_swiper", {
+  loop: true,
+    autoHeight: true,
+    pagination: {
+    el: ".secondary_pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".secondary_next",
+    prevEl: ".secondary_prev",
+  },
+});
+
 
 
 const Job_swiper = new Swiper(".job_swiper", {
