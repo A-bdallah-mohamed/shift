@@ -67,7 +67,7 @@ slidesPerView: 2.5,
     prevEl: ".car_prev",
   },
 });
-fetch("./db/cars.json")
+fetch("./db/Cars.json")
   .then(response => response.json())
   .then(cars => {
     const categories = cars.map(car => car.car_categorie);
