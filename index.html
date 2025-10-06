@@ -20,17 +20,14 @@
 <body>
 
 
-      <header class="d-flex justify-content-between darkblue px-4 px-md-5">
+      <header class="d-flex justify-content-between darkblue px-4 px-md-5 position-relative">
       <div class="d-flex justify-content-center leftheader align-items-center">
         <img src="./assets/images/logo_no_bg.png" alt="">
-        <ul class="d-none d-md-flex">
+        <ul class="d-none d-xl-flex">
           <li>Chauffeur</li>
           <li>Carsharing</li>
           <li>Car Rental</li>
-          <li type="button" data-bs-toggle="collapse" data-bs-target="#businessdropdown">Business Solutions <i
-              class="bi bi-chevron-down"></i></li>
-
-
+          <li id="businessdropdown">Business Solutions <i class="bi bi-chevron-down "></i></li>
         </ul>
       </div>
 
@@ -40,9 +37,41 @@
           <li class="d-none d-md-flex">Contact us <i class="bi bi-chevron-down"></i></li>
           <li class="d-none d-md-flex">English <i class="bi bi-chevron-down"></i></li>
           <li><i class="bi bi-person-fill"></i> <p class="d-none d-md-flex">Log in</p></li>
-          <i class="fa-solid fa-bars"></i>
+         <li> <i class="fa-solid fa-bars center"></i></li>
         </ul>
       </div>
+
+
+
+<!-- Modal -->
+
+<div class="modal fade carspecificationmodal" id="specification" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered custommodalstyle" role="document">
+    <div class="modal-content" id="specificationswindow" >
+      
+    </div>
+  </div>
+</div>
+
+
+      <div class="dropdown px-5" id="dropdown">
+
+        
+           <div class="d-flex justify-content-center leftheader align-items-center">
+        <img src="./assets/images/logo_no_bg.png" alt="">
+          <ul>
+          <li>Home</li>
+          <li>Operating Lease</li>
+          <li>Last Mile</li>
+          <li>Linehaul & Cross Border</li>
+          <li>Group Transportation</li>
+          <li>Car Trading</li>
+        </ul>
+      </div>
+      </div>
+
+
+
     </header>
 
 
@@ -98,7 +127,7 @@
                       <p class="d-none d-md-block">Expand your fleet seamlessly as your business<br /> grows.</p>
                       <p class="center d-md-none">Maximize flexibility with operating lease</p>
                       <div>
-                        <button class="basicbutton w-auto d-none d-md-block">Request a quote</button>
+                        <button class="basicbutton w-auto d-none d-md-block ">Request a quote</button>
                       </div>
                     </div>
                   </div>
@@ -200,7 +229,7 @@
   <section class="carswiper">
     <div class="container-fluid">
       <div class="row justify-content-between">
-        <div class="col-md-4 col-12">
+        <div class="col-lg-5 col-12 center pe-md-5 pe-3">
           <div class="carswipercontent">
             <h1 class="d-none d-md-block fs-1">Explore our fleet</h1>
             <h1 class="d-block d-md-none d-flex align-items-center justify-content-center mt-5 w-100" style="font-size: 40px;">Our fleet</h1>
@@ -212,11 +241,11 @@
             </div>
           </div>
         </div>
-        <div class="col-md-7 col-12 position-relative">
+        <div class="col-lg-7 col-12 position-relative">
           <div class="row">
-            <div class="col-12 overflow-auto">
-              <div class="filterarrows">
-                <div class="filtercontainer text-nowrap" id="filtercontainer">
+            <div class="col-12 overflow-auto overflow-md-hidden">
+              <div class="filterarrows overflow-auto overflow-md-hidden ">
+                <div class="filtercontainer text-nowrap " id="filtercontainer">
               
                 </div>
 
@@ -233,77 +262,7 @@
               <div class="car_swiper swiper">
 
                 <div class="car_wrapper swiper-wrapper" id="car_wrapper">
-                  <div class="car_slide swiper-slide justify-content-between d-flex flex-column">
-                    <div class="cartype p-4 d-inline-flex">
-                      <p>Car Type</p>
-                    </div>
-                    <div class="carimgconatainer">
-                      <img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/ISUZU-4TON-Truck.png
-" alt="">
-                    </div>
-                    <div class="d-flex w-100 align-items-center justify-content-center text-center">
-                      <h6 class="Carname">Car name</p>
-                        <p class="Caryear">2024</p>
-                    </div>
-                  </div>
-
-                  <div class="car_slide swiper-slide justify-content-between d-flex flex-column">
-                    <div class="cartype p-4 d-inline-flex">
-                      <p>Car Type</p>
-                    </div>
-                    <div class="carimgconatainer">
-                      <img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/Nissan-Xterra-SUV.png
-" alt="">
-                    </div>
-                    <div class="d-flex w-100 align-items-center justify-content-center text-center">
-                      <h6 class="Carname">Car name</p>
-                        <p class="Caryear">2024</p>
-                    </div>
-                  </div>
-
-                  <div class="car_slide swiper-slide justify-content-between d-flex flex-column">
-                    <div class="cartype p-4 d-inline-flex">
-                      <p>Car Type</p>
-                    </div>
-                    <div class="carimgconatainer">
-                      <img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/Nissan--xtrail-Suv.png
-" alt="">
-                    </div>
-                    <div class="d-flex w-100 align-items-center justify-content-center text-center">
-                      <h6 class="Carname">Car name</p>
-                        <p class="Caryear">2024</p>
-                    </div>
-                  </div>
-
-                  <div class="car_slide swiper-slide justify-content-between d-flex flex-column">
-                    <div class="cartype p-4 d-inline-flex">
-                      <p>Car Type</p>
-                    </div>
-                    <div class="carimgconatainer">
-                      <img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/Peugeot-Expert--L3-Van.png
-" alt="">
-                    </div>
-                    <div class="d-flex w-100 align-items-center justify-content-center text-center">
-                      <h6 class="Carname">Car name</p>
-                        <p class="Caryear">2024</p>
-                    </div>
-                  </div>
-
-                  <div class="car_slide swiper-slide justify-content-between d-flex flex-column">
-                    <div class="cartype p-4 d-inline-flex">
-                      <p>Car Type</p>
-                    </div>
-                    <div class="carimgconatainer">
-                      <img
-                        src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/Ranger-Rover-Luxary-SUV.png"
-                        alt="">
-                    </div>
-                    <div class="d-flex w-100 align-items-center justify-content-center text-center">
-                      <h6 class="Carname">Car name</p>
-                        <p class="Caryear">2024</p>
-                    </div>
-                  </div>
-
+               
                 </div>
 
               </div>
@@ -312,17 +271,24 @@
             <div class="col-12 py-3">
               <div class="car_pagination swiper-pagination"></div>
             </div>
-     <div class="d-inline-flex d-md-none col-12 mb-5">
+     <div class="d-inline-flex d-md-none col-12 mb-5 center">
               <button class="basicbutton d-block d-md-block">Request a quote</button>
             </div>
           </div>
         </div>
       </div>
     </div>
+                
+
   </section>
 
+
+
+
+
+
   <section class="reasons padding-top-200" style="color: white;">
-    <div class="container-fluid px-5">
+    <div class="container-fluid px-md-5 px-0">
 
       <p class="text-center big-Title d-none d-md-block" style=" letter-spacing: 2px;">Essential benefits</p>
       <p class=" d-md-none fs-1 w-100 center">Essential benefits</p>
@@ -407,7 +373,7 @@
 
 
       <div class="row d-none d-md-flex" style="margin-top: 50px;">
-        <div class="col px-3">
+        <div class="col p-3">
           <div class="Reason blur">
             <div class="iconcontainer">
               <i class="fa-solid fa-coins"></i>
@@ -420,7 +386,7 @@
             </div>
           </div>
         </div>
-        <div class="col px-3">
+        <div class="col p-3">
           <div class="Reason blur">
             <div class="iconcontainer">
 
@@ -434,7 +400,7 @@
           </div>
         </div>
 
-        <div class="col px-3">
+        <div class="col p-3">
           <div class="Reason blur">
             <div class="iconcontainer">
               <i class="fa-solid fa-rocket"></i>
@@ -449,7 +415,7 @@
         </div>
 
 
-        <div class="col px-3">
+        <div class="col p-3">
           <div class="Reason blur">
             <div class="iconcontainer">
 
@@ -460,7 +426,7 @@
             </div>
           </div>
         </div>
-        <div class="col px-3">
+        <div class="col p-3">
           <div class="Reason blur">
             <div class="iconcontainer">
               <i class="fa-solid fa-wifi"></i>
@@ -484,18 +450,21 @@
   <section class="form circlebg">
     <div class="container">
       <div class="row">
-        <div class="col-6 position-relative">
-          <h1>Make the shift-start your partnership now!</h1>
-          <p>Fill out the form below to connect with SHIFT and explore tailored solutions for your busienss needs</p>
+        <div class="col-md-6 col-12 position-relative">
+          <h1 class="d-flex d-md-none fs-1 text-center">Make the shift-start your partnership now!</h1>
+          <h1 class="d-none d-md-flex">Make the shift-start your partnership now!</h1>
+
+          <p class="d-none d-md-flex">Fill out the form below to connect with SHIFT and explore tailored solutions for your busienss needs</p>
+
+          <h1 class="d-flex d-md-none fs-6 text-center w-100">if you would like to contact shit inc., complete the form below.</h1>
 
 
-
-          <div class="position-absolute  float1">
+          <div class="position-absolute  float1 d-md-flex d-none">
             <i class="fa-solid fa-file-lines"></i>
           </div>
 
 
-          <div class="position-absolute float2 ">
+          <div class="position-absolute float2  d-md-flex d-none">
             <i class="fa-solid fa-circle-question"></i>
           </div>
 
@@ -503,7 +472,7 @@
 
 
         </div>
-        <div class="col-6">
+        <div class="col-md-6 col-12">
           <div class="formcontainer">
             <form>
               <p><span class="star">*</span>Mandatory fields</p>
@@ -564,7 +533,7 @@
         <div class="tab-content">
           <div class="tab-pane fade show active" id="personal" role="tabpanel">
             <div class="row">
-              <div class="col">
+              <div class="col-md col-12">
                 <div class="tabscontainer">
 
                   <div class="tab">
@@ -586,7 +555,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col mt-md-0 mt-4">
                 <div class="tabscontainer ">
 
                   <div class="tab">
@@ -632,7 +601,7 @@
 
           <div class=" tab-pane fade" id="business" role="tabpanel">
             <div class="row">
-              <div class="col">
+              <div class="col-12 col-md">
                 <div class="tabscontainer">
                   <div class="tab">
                     <div class="tabimgcontainer">
@@ -642,7 +611,7 @@
                     </div>
                     <div class="tabtext p-4 pb-5 d-flex flex-column justify-content-between">
                       <div>
-                        <h1 class="fs-3">wwww</h1>
+                        <h1 class="fs-3">Last mile</h1>
                         <p class="fs-6">Efficient delivery with advanced technology.</p>
                       </div>
                       <div class="d-flex w-100 justify-content-end">
@@ -668,7 +637,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col mt-4 mt-md-0">
                 <div class="tabscontainer ">
                   <div class="tab">
                     <div class="tabimgcontainer">
@@ -733,12 +702,14 @@
 
 
   <section class="whatshappening">
-    <div class="container-fluid px-5">
-      <div class="row">
+    <div class="container px-md-5 px-0 ">
+      <div class="">
         <div class="col-12 mb-5">
           <h1 class="text-center big-Title" style=" letter-spacing: 2px;">What's happening</h1>
         </div>
-        <div class="col px-4">
+
+        <div class="d-flex overflowscreens">
+        <div class="col px-2">
           <div class="newscontainer">
             <div class="imgcontainer">
               <img
@@ -761,7 +732,7 @@
             </div>
           </div>
         </div>
-        <div class="col px-4">
+        <div class="col px-2">
           <div class="newscontainer">
             <div class="imgcontainer">
               <img
@@ -784,7 +755,7 @@
             </div>
           </div>
         </div>
-        <div class="col px-4">
+        <div class="col px-2">
           <div class="newscontainer">
             <div class="imgcontainer">
               <img
@@ -806,6 +777,7 @@
               </div>
             </div>
           </div>
+        </div>
         </div>
         <div class="col-12 mt-5">
           <div class="w-100 d-flex align-items-center justify-content-center ">

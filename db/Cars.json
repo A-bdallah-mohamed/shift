@@ -1,5 +1,60 @@
-[{
-        "name": "Mercedes-Benz",
+[
+
+
+    {
+        "name": "Isuzu 4 Ton Truck",
+        "year": 2024,
+        "car_categorie": "Truck",
+        "price": 350,
+        "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/ISUZU-4TON-Truck.png",
+        "general": {
+            "fuel": "Diesel",
+            "engine": "5.2L Turbo Diesel"
+        },
+        "saftey": {
+            "airbags": "Driver",
+            "sensors": false
+        },
+        "music": {
+            "applecarplay": false,
+            "androidauto": false,
+            "bluetooth": true,
+            "amfm": true
+        },
+        "capacity": {
+            "people": 3,
+            "doors": 2,
+            "bags": 0
+        }
+    },
+    {
+        "name": "MAN Tractor Head",
+        "year": 2024,
+        "car_categorie": "Tractor Head",
+        "price": 850,
+        "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/MAN-tractor-head.png",
+        "general": {
+            "fuel": "Diesel",
+            "engine": "12.4L Turbo Diesel"
+        },
+        "saftey": {
+            "airbags": "Driver",
+            "sensors": true
+        },
+        "music": {
+            "applecarplay": false,
+            "androidauto": false,
+            "bluetooth": true,
+            "amfm": true
+        },
+        "capacity": {
+            "people": 2,
+            "doors": 2,
+            "bags": 0
+        }
+    },
+    {
+        "name": "BMW 7 Series",
         "year": 2024,
         "car_categorie": "Sedan",
         "price": 200,
@@ -26,65 +81,11 @@
             "bags": 4
         }
     },
-
-
-    {
-        "name": "Isuzu 4 Ton Truck",
-        "year": 2024,
-        "car_categorie": "Truck",
-        "price": 35000,
-        "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/ISUZU-4TON-Truck.png",
-        "general": {
-            "fuel": "Diesel",
-            "engine": "5.2L Turbo Diesel"
-        },
-        "saftey": {
-            "airbags": "Driver",
-            "sensors": false
-        },
-        "music": {
-            "applecarplay": false,
-            "androidauto": false,
-            "bluetooth": true,
-            "amfm": true
-        },
-        "capacity": {
-            "people": 3,
-            "doors": 2,
-            "bags": 0
-        }
-    },
-    {
-        "name": "MAN Tractor Head",
-        "year": 2024,
-        "car_categorie": "Tractor Head",
-        "price": 85000,
-        "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/MAN-tractor-head.png",
-        "general": {
-            "fuel": "Diesel",
-            "engine": "12.4L Turbo Diesel"
-        },
-        "saftey": {
-            "airbags": "Driver",
-            "sensors": true
-        },
-        "music": {
-            "applecarplay": false,
-            "androidauto": false,
-            "bluetooth": true,
-            "amfm": true
-        },
-        "capacity": {
-            "people": 2,
-            "doors": 2,
-            "bags": 0
-        }
-    },
     {
         "name": "Nissan X-Trail",
         "year": 2024,
         "car_categorie": "SUV",
-        "price": 32000,
+        "price": 320,
         "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/Nissan--xtrail-Suv.png",
         "general": {
             "fuel": "Petrol 95",
@@ -110,7 +111,7 @@
         "name": "Range Rover Luxury",
         "year": 2024,
         "car_categorie": "SUV",
-        "price": 120000,
+        "price": 120,
         "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/Ranger-Rover-Luxary-SUV.png",
         "general": {
             "fuel": "Petrol 98 / Hybrid",
@@ -137,7 +138,7 @@
         "name": "Nissan X-Terra",
         "year": 2024,
         "car_categorie": "SUV",
-        "price": 35000,
+        "price": 350,
         "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/Nissan-Xterra-SUV.png",
         "general": {
             "fuel": "Petrol 95",
@@ -162,7 +163,7 @@
         "name": "Toyota Hiace Van Standard Roof",
         "year": 2024,
         "car_categorie": "Van",
-        "price": 28000,
+        "price": 280,
         "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/Toyota-HIACE-VAN-STD-Roof-Van.png",
         "general": {
             "fuel": "Petrol 95 / Diesel",
@@ -188,7 +189,7 @@
         "name": "Peugeot Expert L3",
         "year": 2024,
         "car_categorie": "Van",
-        "price": 31000,
+        "price": 310,
         "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/Peugeot-Expert--L3-Van.png",
         "general": {
             "fuel": "Diesel",
