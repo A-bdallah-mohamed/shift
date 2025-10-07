@@ -118,12 +118,13 @@ header {
 
 .nav-item .nav-link {
   padding: 10px 20px;
+    border-radius: 12px;
+
 }
 
 .toggletabs .nav-link.active:hover {
   background-color: #202e42;
   color: white;
-  border-radius: 10px;
 }
 
 .toggletabs .nav-link:hover {
@@ -138,10 +139,10 @@ header ul {
   display: flex;
   list-style: none;
   margin: 0;
-  gap: 35px;
+  gap: 25px;
   color: #202e42;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 li {
@@ -162,7 +163,7 @@ li i {
 }
 
 .leftheader img {
-  height: 22px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -289,9 +290,9 @@ h2 {
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  height: 350px;
   color: white;
   gap: 20px;
+  height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(12px);
   z-index: 6;
@@ -311,12 +312,12 @@ h2 {
 }
 
 .reasoncontent p {
-  font-size: 14px;
+  font-size: 16px;
   padding: 0 10px;
 }
 
 .big-Title {
-  font-size: 60px;
+  font-size: 48px;
   font-weight: 700;
 }
 
@@ -505,7 +506,7 @@ color: rgb(0, 0, 0);
   margin-bottom: 10px;
   border-radius: 12px;
   overflow: auto;
-  background: linear-gradient(to top, #93939450, #7f7f8013);
+  background: linear-gradient(to bottom, #ffffff30, #ffffff79);
   color: white;
   backdrop-filter: blur(50px);
 
@@ -541,7 +542,7 @@ color: rgb(0, 0, 0);
 
 .accordion-button {
   padding: 30px 70px 30px 70px;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -605,7 +606,7 @@ body {
 }
 
 .basicbutton {
-  padding: 10px 20px;
+  padding: 10px 40px;
   border-radius: 12px;
   border: none;
   font-weight: 500;
@@ -628,8 +629,8 @@ body {
   gap: 20px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.397);
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(12px);
+  background: linear-gradient(224.96deg, rgba(255, 255, 255, 0.01) -10.38%, rgba(153, 153, 153, 0.09) 138.2%), linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  backdrop-filter: blur(80px);
 }
 
 .blurcontainer i {
@@ -644,9 +645,6 @@ body {
   justify-content: center;
 }
 
-.blurcontainer {
-  max-width: 500px;
-}
 
 .circlebg {
   background: url(./assets/images/Ellipse\ 12.png) top left no-repeat;
@@ -738,11 +736,11 @@ body {
 }
 
 .form h1 {
-  font-size: 70px;
+  font-size: 48px;
 }
 
 .form p {
-  font-size: 25px;
+  font-size: 18px;
   font-weight: normal;
   max-width: 80%;
 }
@@ -901,8 +899,8 @@ footer img {
 }
 
 .carswipercontent p {
-  font-size: 25px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .carswipercontent h1 {
@@ -942,11 +940,14 @@ footer img {
 
 .filter {
   padding: 10px 10px;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.193);
   border-radius: 12px;
   cursor: pointer;
+  font-size: 13px;
 }
-
+.floatimg{
+  width: 350px;
+}
 .filter_active {
   background-color: white;
   display: flex;
@@ -960,14 +961,13 @@ footer img {
 }
 
 .car_slide {
-  height: 450px !important;
+  height: 450px ;
   border: 1px solid rgba(255, 255, 255, 0.253);
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.116);
   position: relative;
   overflow: hidden;
   width: auto;
-  transition: 0.3s ease all;
 }
 
 .car_slide img {
@@ -975,21 +975,19 @@ footer img {
   object-fit: cover;
   max-width: 100%;
 }
-
-.car_swiper .swiper-slide-active {
-  height: 500px !important;
-  transition: 0.3s ease all;
-}
-
 .car_swiper .swiper-slide-active img {
-  transform: translateX(-150px);
+  transform: translateX(-140px) ;
+  padding-top: 50px;
 }
-
+.carimgconatainer img {
+  width: auto;
+height: 100%;
+transform: translateX(-40px) ;
+}
 
 .car_wrapper {
   align-items: flex-end;
   display: flex;
-  min-height: 550px;
 }
 
 .swiper-autoheight .swiper-wrapper {
@@ -1012,11 +1010,7 @@ footer img {
   border-radius: 12px;
 }
 
-.carimgconatainer img {
-  width: auto;
-  transition: 0.3s ease all;
-height: 100%;
-}
+
 .whatshappening .imgcontainer img{
 width: 390px;
 height: 280px;
@@ -1027,7 +1021,7 @@ object-fit: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateX(150px);
+  transform: translateX(200px); 
   max-height: 100%;
 }
 
@@ -1049,18 +1043,17 @@ object-fit: cover;
 .nav-tabs {
   background-color: rgb(54, 54, 54);
   border-radius: 15px !important;
+  border: none !important;
 }
 
 .nav-link {
   border-radius: 12px;
-  color: rgb(83, 83, 83);
-  padding: 10px 40px !important;
+  color: rgb(212, 212, 212);
+  padding: 10px 50px !important;
 }
 
 .nav-link:hover {
-  border-radius: 12px;
-  color: rgb(182, 182, 182);
-  background-color: rgba(255, 255, 255, 0.336);
+    color: rgb(212, 212, 212);
 
 }
 
@@ -1085,7 +1078,7 @@ ul li {
   position: relative;
 }
 
-ul li::after {
+header ul li::after {
   content: "";
   position: absolute;
   left: 0;
@@ -1121,21 +1114,23 @@ ul li:hover::after {
 .newscontent span {
   color: rgb(192, 192, 192);
 }
-#specificationswindow{
-  height: 100%;
+.modal-content{
+  width: auto;
+  max-height: 100vh;
 }
+
 .carspecificationmodal .container-fluid{
   padding: 0;
 flex: 1;
 }
 .specificationwindowcontainer{
- width: 100%;
- height: 100%;
+ 
+max-height: 100%;
  background-color: white;
  z-index: 20;
  border-radius: 12px;
  position: relative;
- color: black;
+ color: #242e42;
  display: flex;
  align-items: center;
  flex-direction: column;
@@ -1150,15 +1145,29 @@ flex: 1;
   border-radius: 12px;
   padding: 10px 0;
   transition: 0.3s ease all;
+  color: #131f6b;
+  font-size: 18px;
+font-weight: 500;
 }
+.specificationwindowcontainer .img-container{
+display: flex;
+align-items: center;
+justify-content: center;
 
+}
+.specificationwindowcontainer .img-container img{
+  width: 800px;
+  height: auto;
+}
 .specificationwindowcontainer button:hover{
 background-color: rgb(227, 227, 227);
 }
-.fa-xmark{
+.close{
+    transform: rotate(0deg);
+font-size: 18px;
   transition: 0.3s ease all;
 }
-.specificationwindowcontainer .fa-xmark:hover{
+.specificationwindowcontainer .close:hover{
   cursor: pointer;
   transform: rotate(180deg);
 }
@@ -1185,16 +1194,17 @@ height: 80vh;
   transform: translate(0 ,0);
 }
 .cartab{
-  background-color: rgb(222, 222, 222);
-  padding: 10px 40px;
-  border-radius: 12px;
+  background-color: #e7e9f0;
+  padding: 5px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
 }
 .cartab span{
-  font-weight: bold;
+  font-weight: 800;
 }
 .swiper-slide {
   opacity: 0.5; 
-  transition: opacity 0.3s ease; 
 }
 
 .swiper-slide-active {
@@ -1202,6 +1212,19 @@ height: 80vh;
 }
 
 @media (max-width: 1124px){
+
+  .car_slide {
+  height: 350px ;
+  border: 1px solid rgba(255, 255, 255, 0.253);
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.116);
+  position: relative;
+  overflow: hidden;
+  
+}
+
+
+
   .carswiper {
   background: linear-gradient(to bottom, #181a1f, #393939);
   padding: 50px 0 0 0px;
@@ -1212,9 +1235,25 @@ height: 80vh;
   justify-content: center;
   margin-bottom: 50px
 }
+header{
+  padding: 0;
+}
+.car_wrapper {
+  align-items: flex-end;
+  display: flex;
+  min-height: 450px;
+}
+
 }
 
 @media (max-width: 768px) {
+  .car_wrapper {
+  align-items: flex-end;
+  display: flex;
+  min-height: 550px;
+}
+
+
 .overflowscreens{
   overflow: auto;
 }
@@ -1252,7 +1291,7 @@ object-fit: cover;
   }
 
 .car_slide {
-  height: 450px !important;
+  height: 450px ;
   border: 1px solid rgba(255, 255, 255, 0.253);
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.116);
@@ -1262,7 +1301,8 @@ object-fit: cover;
 }
 
 .car_swiper .swiper-slide-active {
-  height: 450px !important;
+
+   transition: 0.3s ease all;
 }
   .reasons .container-fluid::before,
   .faq::before {
@@ -1278,11 +1318,6 @@ object-fit: cover;
     pointer-events: none;
   }
 
-  .blurcontainer {
-    padding: 20px;
-    width: 350px;
-    height: 250px;
-  }
 
   footer {
     padding: 0;
@@ -1302,7 +1337,7 @@ object-fit: cover;
   gap: 15px;
 }
 .Reason {
-margin: 0 20px;
+margin: 0 10px;
 }
 .nav-item{
   flex: 1;

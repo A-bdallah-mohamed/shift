@@ -92,7 +92,7 @@
             "engine": "2.5L I4"
         },
         "saftey": {
-            "airbags": "Front + Side + Curtain",
+            "airbags": "Front, Side, Curtain",
             "sensors": true
         },
         "music": {
@@ -118,7 +118,7 @@
             "engine": "3.0L Turbocharged I6 Mild Hybrid"
         },
         "saftey": {
-            "airbags": "Front + Side + Curtain + Knee",
+            "airbags": "Front, Side, Curtain, Knee",
             "sensors": true
         },
         "music": {
@@ -145,7 +145,7 @@
             "engine": "2.5L I4"
         },
         "saftey": {
-            "airbags": "Front + Side + Curtain",
+            "airbags": "Front, Side, Curtain",
             "sensors": true
         },
         "music": {
@@ -170,7 +170,7 @@
             "engine": "2.8L Turbo Diesel"
         },
         "saftey": {
-            "airbags": "Driver + Front Passenger",
+            "airbags": "Driver, Front Passenger",
             "sensors": true
         },
         "music": {
@@ -196,7 +196,7 @@
             "engine": "2.0L BlueHDi"
         },
         "saftey": {
-            "airbags": "Driver + Passenger",
+            "airbags": "Driver, Passenger",
             "sensors": true
         },
         "music": {
