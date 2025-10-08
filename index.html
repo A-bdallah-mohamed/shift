@@ -1,4 +1,4 @@
-<html>
+<html >
 
 <head>
   
@@ -15,6 +15,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </head>
 
 <body>
@@ -35,17 +36,23 @@
         <ul>
           <li class="d-none d-lg-flex-inline"><i class="bi bi-search"></i></li>
           <li class="d-none d-lg-flex">Contact us <i class="bi bi-chevron-down"></i></li>
-          <li class="d-none d-md-flex">English <i class="bi bi-chevron-down"></i></li>
+          <li class="d-none d-md-flex dropdown"><div class="dropdown-toggle" type="button" data-bs-target=""><p>English</p> <i class="bi bi-chevron-down"></i></div></li>
+                    <li class="d-flex d-md-none">En <i class="bi bi-chevron-down"></i></li>
+
           <li class="d-none d-lg-flex-inline"><i class="bi bi-person-fill"></i> <p class="d-none d-md-flex">Log in</p></li>
-         <li class="d-flex-inline d-lg-none"> <i class="fa-solid fa-bars center"></i></li>
+         <li class="d-flex-inline d-lg-none"      
+            class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"> <i class="fa-solid fa-bars center"></i></li>
         </ul>
       </div>
 
 
 
-<!-- Modal -->
 
-<div class="modal fade carspecificationmodal" id="specification" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade carspecificationmodal p-0 " id="specification" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog center modal-dialog-centered custommodalstyle" role="document">
     <div class="modal-content" id="specificationswindow" >
       
@@ -70,8 +77,65 @@
       </div>
 
 
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header p-3 justify-content-between fw-bold">
+        <img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/logo.png" alt="">
+       
+          <div class="d-flex align-items-center gap-3 p-0">
+                                <p >En</p>
+                             <i class="bi bi-person-fill"></i>
+          <button type="button" class="btn-close p-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 
+          </div>
+        
+    </div>
+
+        <div class="offcanvas-body">
+<div class="searchinput d-flex">
+  <span class="center"><i class="bi bi-search"></i></span>
+  <input type="text" placeholder="Search for">
+</div>          <ul class="navbar-nav ms-auto">
+        
+            <li class="nav-item">
+              <a class="nav-link dropdownn" type="button" aria-expanded="false"
+  aria-controls="toggleDiv" href="#" data-bs-target="#personalusedropdown" data-bs-toggle="collapse"  >Personal use</a>
+            </li>
+            <ul id="personalusedropdown" class="collapse">
+              <li>Car Rental</li>
+              <li>Chauffeur</li>
+              <li>Carsharing</li>
+
+            </ul>
+            <li>
+            <div class="gryaline my-1"></div>
+            </li>
+                   <li class="nav-item">
+              <a class="nav-link dropdownn" type="button" aria-expanded="false"
+  aria-controls="toggleDiv" href="#" data-bs-target="#BusinessSolutionsdropdown" data-bs-toggle="collapse"  >Business Solutions</a>
+            </li>
+            <ul id="BusinessSolutionsdropdown" class="collapse">
+              <li>Car Rental</li>
+              <li>Chauffeur</li>
+              <li>Carsharing</li>
+
+            </ul>
+  
+                     <li>   <div class="gryaline my-1"></div></li>
+
+                <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+                <li class="nav-item">
+              <a class="nav-link" href="#">Newsroom</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
+
 
 
         <div class="swiper mainswiper">
@@ -111,26 +175,26 @@
 
 
   <section class="leasesection padding-top-100 padding-bottom-100">
-    <div class="container-fluid  px-0 circlebg">
       <div class="secondary_swiper swiper padding-bottom-100 ">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
+            <div class="container-fluid">
             <div class="row  center" style="color: white;">
               <div class="col-12">
                 <div class="row">
                   <div class="col-12 col-md-6">
-                    <div class="d-flex flex-column gap-3 ps-0 ps-md-5">
+                    <div class="d-flex flex-column gap-md-3 gap-1  ps-0 ps-md-5">
                       <h1 class="d-none d-md-block">Operating Lease</h1>
               <h1 class="center d-md-none fs-1  w-100">Operating lease </h1>
 
-                      <p class="d-none d-md-block">Expand your fleet seamlessly as your business<br /> grows.</p>
-                      <p class="center d-md-none">Maximize flexibility with operating lease</p>
+                      <p class="d-none d-md-block fs-5 fw-normal">Whether you're scaling up or optimizing operations, SHIFT's operating lease<br />Solutions offer the flexibility, cost-efficiency, and vehicle quality your business<br/>demands</p>
+                      <p class="d-flex text-center px-1 d-md-none fs-6 fw-normal">Whether you're scaling up or optimizing operations, SHIFT's operating lease<br />Solutions offer the flexibility, cost-efficiency, and vehicle quality your business<br/>demands</p>
                       <div>
                         <button class="basicbutton w-auto d-none d-md-block ">Request a quote</button>
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6">
+                  <div class="col-12 col-md-6 p-0">
                     <div class="img-container">
                       <img src="./assets/images/secondary1.jpg" alt="">
                     </div>
@@ -138,31 +202,45 @@
                   </div>
                 </div>
               </div>
-              <div class="col-8 col-xl-5 d-flex align-items-center justify-content-center">
-                <div class="blurcontainer blur">
-                  <i class="fa-solid fa-bolt"></i>
-                  <h4>Unlock flexibility with SHIFT's operating lease solutions. Upgrade to the latest fleet without the
-                    hassle of long-term commitment.</h4>
-                </div>
+              <div class="col-11 col-xl-6 d-flex align-items-center justify-content-center flex-column">
+                
               </div>
+
+            </div>
+
+<div class="blurcontainer-div blur">
+  <div class="row center">
+    <div class="col-11 col-xl-6">
+      <div class="blurcontainer">
+                  <i class="fa-solid fa-bolt"></i>
+                  <p class="fs-md-4 fs-6 fw-normal">Unlock flexibility with SHIFT's operating lease solutions. Upgrade to the latest fleet without the
+                    hassle of long-term commitment.</p>
+</div>
+</div>
+</div>
+                </div>
+                                                      <button class="basicbutton w-100 mt-3 d-block d-md-none ">Request a quote</button>
+
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="row center" style="color: white;">
-              <div class="col-12">
-                <div class="row ">
-                  <div class="col-12 col-md-6">
-                    <div class="d-flex flex-column gap-3 ps-md-5">
-                      <h1 class="d-none d-md-block">Carsharing </h1>
-                                    <h1 class="center d-md-none fs-1  w-100">Carsharing</h1>
 
-                      <p>Expand your fleet seamlessly as your business<br /> grows.</p>
+                   <div class="swiper-slide">
+            <div class="row  center" style="color: white;">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="d-flex flex-column gap-md-3 gap-1  ps-0 ps-md-5">
+                      <h1 class="d-none d-md-block">Operating Lease</h1>
+              <h1 class="center d-md-none fs-1  w-100">Operating lease </h1>
+
+                      <p class="d-none d-md-block fs-5 fw-normal">Whether you're scaling up or optimizing operations, SHIFT's operating lease<br />Solutions offer the flexibility, cost-efficiency, and vehicle quality your business<br/>demands</p>
+                      <p class="d-flex text-center px-1 d-md-none fs-6 fw-normal">Whether you're scaling up or optimizing operations, SHIFT's operating lease<br />Solutions offer the flexibility, cost-efficiency, and vehicle quality your business<br/>demands</p>
                       <div>
-                        <button class="basicbutton w-auto d-none d-md-block">Request a quote</button>
+                        <button class="basicbutton w-auto d-none d-md-block ">Request a quote</button>
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6">
+                  <div class="col-12 col-md-6 p-0">
                     <div class="img-container">
                       <img src="./assets/images/secondary2.jpg" alt="">
                     </div>
@@ -170,33 +248,37 @@
                   </div>
                 </div>
               </div>
-              <div class="col-8 col-xl-5 d-flex align-items-center justify-content-center">
+              <div class="col-11 col-xl-6 d-flex align-items-center justify-content-center flex-column">
                 <div class="blurcontainer blur">
                   <i class="fa-solid fa-bolt"></i>
-                  <h4>
-                    Shift's B2B carsharing service helps corporate clients expand your mobility solutions with seamless
-                    fleet management. scale your carsharing business effortlessly.
-                  </h4>
+                  <p class="fs-md-4 fs-6 fw-normal">Unlock flexibility with SHIFT's operating lease solutions. Upgrade to the latest fleet without the
+                    hassle of long-term commitment.</p>
                 </div>
+                                                      <button class="basicbutton w-100 mt-3 d-block d-md-none ">Request a quote</button>
+
               </div>
+
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="row center" style="color: white;">
+
+    
+                   <div class="swiper-slide">
+            <div class="row  center" style="color: white;">
               <div class="col-12">
                 <div class="row">
                   <div class="col-12 col-md-6">
-                    <div class="d-flex flex-column gap-3 ps-md-5">
-                      <h1 class="d-none d-md-block">Chaffeur</h1>
-   <h1 class="center d-md-none fs-1  w-100">Carsharing</h1>
+                    <div class="d-flex flex-column gap-md-3 gap-1  ps-0 ps-md-5">
+                      <h1 class="d-none d-md-block">Operating Lease</h1>
+              <h1 class="center d-md-none fs-1  w-100">Operating lease </h1>
 
-                      <p >Expand your fleet seamlessly as your business<br /> grows.</p>
+                      <p class="d-none d-md-block fs-5 fw-normal">Whether you're scaling up or optimizing operations, SHIFT's operating lease<br />Solutions offer the flexibility, cost-efficiency, and vehicle quality your business<br/>demands</p>
+                      <p class="d-flex text-center px-1 d-md-none fs-6 fw-normal">Whether you're scaling up or optimizing operations, SHIFT's operating lease<br />Solutions offer the flexibility, cost-efficiency, and vehicle quality your business<br/>demands</p>
                       <div>
                         <button class="basicbutton w-auto d-none d-md-block ">Request a quote</button>
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6">
+                  <div class="col-12 col-md-6 p-0">
                     <div class="img-container">
                       <img src="./assets/images/secondary3.jpg" alt="">
                     </div>
@@ -204,23 +286,23 @@
                   </div>
                 </div>
               </div>
-              <div class="col-8 col-xl-5 d-flex align-items-center justify-content-center">
-                <div class="blurcontainer blur">
+              <div class="col-11 col-xl-6 d-flex align-items-center justify-content-center flex-column">
+                <div class="blurcontainer">
                   <i class="fa-solid fa-bolt"></i>
-                  <h4>
-                    Shift's B2B chauffeuring solution empowers corporate clients to streamline operations enhance
-                    service efficiency. our SaaS platform simplifies booking and management for effortless business
-                    growth. </h4>
+                  <p class="fs-md-4 fs-6 fw-normal">Unlock flexibility with SHIFT's operating lease solutions. Upgrade to the latest fleet without the
+                    hassle of long-term commitment.</p>
                 </div>
+                                                      <button class="basicbutton w-100 mt-3 d-block d-md-none ">Request a quote</button>
+
               </div>
+
             </div>
           </div>
-
+ 
         </div>
 
         <div class="secondary_pagination swiper-pagination"></div>
       </div>
-    </div>
   </section>
 
 
@@ -288,11 +370,6 @@
                 
 
   </section>
-
-
-
-
-
 
   <section class="reasons padding-top-200" style="color: white;">
     <div class="container-fluid px-lg-5 px-0">
@@ -381,7 +458,7 @@
 
       <div class="row d-none d-md-flex" style="margin-top: 50px;">
         <div class="col-xl col-6 p-3">
-          <div class="Reason blur">
+          <div class="Reason h-md-100  blur">
             <div class="iconcontainer">
               <i class="fa-solid fa-coins"></i>
             </div>
@@ -394,7 +471,7 @@
           </div>
         </div>
         <div class="col-xl col-6 p-3">
-          <div class="Reason blur">
+          <div class="Reason h-md-100 blur">
             <div class="iconcontainer">
 
               <i class="fa-solid fa-star"></i>
@@ -408,7 +485,7 @@
         </div>
 
         <div class="col-xl col-6 p-3">
-          <div class="Reason blur">
+          <div class="Reason h-md-100 blur">
             <div class="iconcontainer">
               <i class="fa-solid fa-rocket"></i>
 
@@ -423,7 +500,7 @@
 
 
         <div class="col-xl col-6 p-3">
-          <div class="Reason blur">
+          <div class="Reason h-md-100 blur">
             <div class="iconcontainer">
 
               <i class="fa-solid fa-clock"></i> </div>
@@ -434,7 +511,7 @@
           </div>
         </div>
         <div class="col-xl col-6 p-3">
-          <div class="Reason blur">
+          <div class="Reason h-md-100 blur">
             <div class="iconcontainer">
               <i class="fa-solid fa-wifi"></i>
             </div>
@@ -725,7 +802,7 @@
             </div>
             <div class="newscontent">
               <span>• 8 min read</span>
-              <h1>Your Journey Starts with a Step</h1>
+              <h3>Your Journey Starts with a Step</h3>
               <p>Join us at the Step Ahead Career Fair on October 3-4 at hilton hotel Riyadh.</p>
               <div class="tags">
                 <div class="tag">Riyadh</div>
@@ -748,7 +825,7 @@
             </div>
             <div class="newscontent">
               <span>• 8 min read</span>
-              <h1>Your Journey Starts with a Step</h1>
+              <h3>Your Journey Starts with a Step</h3>
               <p>Join us at the Step Ahead Career Fair on October 3-4 at hilton hotel Riyadh.</p>
               <div class="tags">
                 <div class="tag">Riyadh</div>
@@ -771,7 +848,7 @@
             </div>
             <div class="newscontent">
               <span>• 8 min read</span>
-              <h1>Your Journey Starts with a Step</h1>
+              <h3>Your Journey Starts with a Step</h3>
               <p>Join us at the Step Ahead Career Fair on October 3-4 at hilton hotel Riyadh.</p>
               <div class="tags">
                 <div class="tag">Riyadh</div>
@@ -936,7 +1013,6 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="home.js"></script>
-
 
 </body>
 

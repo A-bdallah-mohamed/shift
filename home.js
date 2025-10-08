@@ -95,23 +95,26 @@ fetch("./db/Cars.json")
       specificationWindow.classList.remove("pe-none", "opacity-0");
       specificationWindow.innerHTML = `
           <div class="specificationwindowcontainer">
-            <div class="col-12 d-flex justify-content-between align-items-center">
-              <p class="fs-4 fw-bold mb-0">${car.name}, ${car.year}</p>
+            <div class="col-12 d-flex d-none d-md-flex justify-content-md-between align-items-center">
+              <p class="fs-4 fw-bold mb-0 ">${car.name}, ${car.year}</p>
               <p data-bs-dismiss="modal" class="mb-0 close"><i class="bi bi-x-lg"></i></p>
             </div>
 
-            <div class="col-12 flex-grow-1 cardata">
-              <div class="row h-100">
-                <div class="col-8">
-                  <div class="d-flex flex-column justify-content-between h-100">
-                    <div class="d-flex gap-3 mt-4">
+            <div class="col-12 cardata">
+              <div class="row h-md-100">
+                <div class="col-md-8 col-12">
+<div class="d-flex flex-column justify-content-md-between justify-content-start h-md-100">
+                    <div class="d-flex gap-3 mt-md-4 mt-0 justify-content-md-start justify-content-between">
                       <div class="cartab ">${car.car_categorie}</div>
                       <div class="cartab ">From <span>${car.price} SAR</span> / 1 day</div>
                     </div>
                     <div class="img-container">
                       <img src="${car.img}" class="img-fluid rounded" alt="${car.name}">
                     </div>
-                    <div class="d-flex gap-4 fs-4 fw-bold mb-2">
+                    <div class="d-flex d-md-none fs-2 fw-bold center">${car.name}</div>
+                                        <div class="d-flex d-md-none fs-6 center pb-3 text-muted">${car.year}</div>
+
+                    <div class="d-flex gap-4 fs-4 fw-bold mb-2 justify-content-center justify-content-md-start">
                       <div class="d-flex align-items-center gap-3 fs-5">
                         <i class="fa-solid fa-user"></i>
                         <p class="mb-0">${car.capacity.people}</p>
@@ -127,8 +130,8 @@ fetch("./db/Cars.json")
                     </div>
                   </div>
                 </div>
-
-                <div class="col-4">
+<div class="gryaline my-2 d-flex d-md-none"></div>
+                <div class="col-12 col-md-4 py-4 py-md-0">
                   <div class="d-flex flex-column justify-content-between h-100 py-0 py-xxl-5 gap-4">
                     ${createSpecificationSections(car)}
                   </div>
@@ -142,11 +145,7 @@ fetch("./db/Cars.json")
           </div>
       `;
 
-      document.querySelectorAll(".cancelspecifications").forEach(cancel => {
-        cancel.addEventListener("click", () => {
-          specificationWindow.classList.add("pe-none", "opacity-0");
-        });
-      });
+
     }
 
     
