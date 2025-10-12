@@ -1,4 +1,3 @@
-// ====== MAIN SWIPER INITIALIZATION ======
 const mainSwiper = new Swiper(".mainswiper", {
   loop: true,
   pagination: {
@@ -11,7 +10,6 @@ const mainSwiper = new Swiper(".mainswiper", {
   },
 });
 
-// ====== SECONDARY SWIPER ======
 const secondarySwiper = new Swiper(".secondary_swiper", {
   loop: true,
   autoHeight: true,
@@ -25,7 +23,6 @@ const secondarySwiper = new Swiper(".secondary_swiper", {
   },
 });
 
-// ====== BENEFITS SWIPER ======
 const benefitsSwiper = new Swiper(".benefits_swiper", {
   loop: true,
   autoHeight: true,
@@ -35,12 +32,13 @@ const benefitsSwiper = new Swiper(".benefits_swiper", {
   },
 });
 
-// ====== CARS SECTION ======
 fetch("./db/Cars.json")
   .then(res => res.json())
   .then(cars => {
-    
-    const allCategories = ["All", ...new Set(cars.map(car => car.car_categorie))];
+    const lang = document.documentElement.lang || 'en';
+    const allLabel = lang === 'ar' ? 'الكل' : 'All';
+
+    const allCategories = [allLabel, ...new Set(cars.map(car => car.car_categorie[lang]))];
     const filterContainer = document.getElementById("filtercontainer");
     const carWrapper = document.getElementById("car_wrapper");
     const specificationWindow = document.getElementById("specificationswindow");
@@ -60,15 +58,15 @@ fetch("./db/Cars.json")
         .map(car => `
           <div class="car_slide swiper-slide d-flex flex-column justify-content-between position-relative">
             <div class="cartype p-3 d-inline-flex">
-              <p>${car.car_categorie}</p>
+              <p>${car.car_categorie[lang]}</p>
             </div>
             <div class="carimgconatainer">
-              <img src="${car.img}" alt="${car.name}">
+              <img src="${car.img}" alt="${car.name[lang]}">
             </div>
             <div class="d-inline-flex w-100 align-items-center justify-content-center flex-column p-3">
-              <h6 class="Carname">${car.name}</h6>
+              <h6 class="Carname">${car.name[lang]}</h6>
               <button class="Specification" type="button" data-bs-toggle="modal" data-bs-target="#specification">
-                Specification
+                ${lang === "en" ? 'specifications' : 'المواصفات'}
               </button>
             </div>
           </div>
@@ -81,22 +79,23 @@ fetch("./db/Cars.json")
     }
 
      
-    function attachSpecificationListeners(list) {
-      document.querySelectorAll(".Specification").forEach(btn => {
-        btn.addEventListener("click", () => {
-          const carName = btn.closest(".car_slide").querySelector(".Carname").innerText;
-          const car = list.find(c => c.name === carName);
-          openSpecification(car);
-        });
-      });
-    }
+   function attachSpecificationListeners(list) {
+  document.querySelectorAll(".Specification").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const carName = btn.closest(".car_slide").querySelector(".Carname").innerText;
+      const car = list.find(c => c.name[lang] === carName);
+      if (car) openSpecification(car);
+    });
+  });
+}
+
 
     function openSpecification(car) {
       specificationWindow.classList.remove("pe-none", "opacity-0");
       specificationWindow.innerHTML = `
           <div class="specificationwindowcontainer">
             <div class="col-12 d-flex d-none d-md-flex justify-content-md-between align-items-center">
-              <p class="fs-4 fw-bold mb-0 ">${car.name}, ${car.year}</p>
+              <p class="fs-4 fw-bold mb-0 ">${car.name[lang]}, ${car.year}</p>
               <p data-bs-dismiss="modal" class="mb-0 close"><i class="bi bi-x-lg"></i></p>
             </div>
 
@@ -105,13 +104,18 @@ fetch("./db/Cars.json")
                 <div class="col-md-8 col-12">
 <div class="d-flex flex-column justify-content-md-between justify-content-start h-md-100">
                     <div class="d-flex gap-3 mt-md-4 mt-0 justify-content-md-start justify-content-between">
-                      <div class="cartab ">${car.car_categorie}</div>
-                      <div class="cartab ">From <span>${car.price} SAR</span> / 1 day</div>
+                      <div class="cartab center fs-4 ">${car.car_categorie[lang]}</div>
+                      <div class="cartab center fs-6">
+                      
+                                      ${lang === "en" ? `From <span> &nbsp;${car.price} SAR &nbsp; </span> / 1 day` : `من <span> &nbsp;${car.price} ريال &nbsp; </span> / اليوم`}
+
+
+                                      </div>
                     </div>
                     <div class="img-container">
-                      <img src="${car.img}" class="img-fluid rounded" alt="${car.name}">
+                      <img src="${car.img}" class="img-fluid rounded" alt="${car.name[lang]}">
                     </div>
-                    <div class="d-flex d-md-none fs-2 fw-bold center">${car.name}</div>
+                    <div class="d-flex d-md-none fs-2 fw-bold center">${car.name[lang]}</div>
                                         <div class="d-flex d-md-none fs-6 center pb-3 text-muted">${car.year}</div>
 
                     <div class="d-flex gap-4 fs-4 fw-bold mb-2 justify-content-center justify-content-md-start">
@@ -131,9 +135,161 @@ fetch("./db/Cars.json")
                   </div>
                 </div>
 <div class="gryaline my-2 d-flex d-md-none"></div>
-                <div class="col-12 col-md-4 py-4 py-md-0">
-                  <div class="d-flex flex-column justify-content-between h-100 py-0 py-xxl-5 gap-4">
-                    ${createSpecificationSections(car)}
+                <div class="col-12 col-md-4 pt-2 pt-md-5 pb-3 py-md-0 pe-5">
+                  <div class="d-flex flex-column justify-content-between h-100 py-0 pb-xxl-5 pt-xxl-2 gap-4">
+                
+                
+                
+                  <div class="d-flex flex-column gap-2">
+                  <p>
+                                                        ${lang === "en" ? 'General' : 'عامة'}</p>
+</p>
+
+
+
+                  <div class="d-flex align-items-center justify-content-between">
+
+                 <div class="d-flex align-items-center gap-4">
+                  <i class="fa-solid fa-gas-pump"></i>
+                  <p>
+                    ${lang === "en" ? 'Fuel' : 'الوقود'}</p>
+                  </div>
+
+                  <p>${car.general.fuel[lang]}</p>
+                  </div>
+
+
+
+
+                        <div class="d-flex align-items-center justify-content-between">
+
+                 <div class="d-flex align-items-center gap-4">
+                  <i class="fa-solid fa-car"></i>
+                  <p>
+                                      ${lang === "en" ? 'FuEngineel' : 'المحرك'}</p>
+
+                  </p>
+                  </div>
+
+                  <p>${car.general.engine[lang]}</p>
+                  </div>
+
+
+
+
+                  </div>
+
+
+
+
+
+
+                            
+                  <div class="d-flex flex-column gap-2">
+                  <p>
+                                      ${lang === "en" ? 'Safety' : 'الامان'}</p>
+</p>
+
+
+
+                  <div class="d-flex align-items-center justify-content-between">
+
+                 <div class="d-flex align-items-center gap-4">
+                  <i class="fa-solid fa-shield"></i>
+                  <p>
+                                                        ${lang === "en" ? 'Airbags' : 'اكياس هوائيه'}</p>
+</p>
+                  </div>
+
+                  <p>${car.safety.airbags[lang]}</p>
+                  </div>
+
+
+
+
+                        <div class="d-flex align-items-center justify-content-between">
+
+                 <div class="d-flex align-items-center gap-4">
+<i class="fa-solid fa-satellite-dish"></i>
+                  <p>
+                                                                          ${lang === "en" ? 'Sensors' : 'اجهزة استشعار'}</p>
+
+                                                                          </p>
+                  </div>
+
+                  <p>${car.safety.sensors ? '<i class="fa-solid fa-check"></i>' : '<i class="fa-solid fa-xmark"></i>'}</p>
+                  </div>
+
+
+
+
+                  </div>
+
+
+
+
+                            
+                  <div class="d-flex flex-column gap-2">
+                  <p> ${lang === "en" ? 'Music' : 'موسيقي'}</p>
+
+
+
+                  <div class="d-flex align-items-center justify-content-between">
+
+                 <div class="d-flex align-items-center gap-4">
+                 <i class="fa-brands fa-apple"></i>
+                  <p>Apple carplay</p>
+                  </div>
+
+                  <p>${car.music.applecarplay ? '<i class="fa-solid fa-check"></i>' : '<i class="fa-solid fa-xmark"></i>'}</p>
+                  </div>
+
+
+
+
+                        <div class="d-flex align-items-center justify-content-between">
+
+                 <div class="d-flex align-items-center gap-4">
+                  <i class="fa-brands fa-android"></i>
+                  <p>Android auto</p>
+                  </div>
+
+                  <p>${car.music.androidauto ? '<i class="fa-solid fa-check"></i>' : '<i class="fa-solid fa-xmark"></i>'}</p>
+                  </div>
+
+
+
+
+                        <div class="d-flex align-items-center justify-content-between">
+
+                 <div class="d-flex align-items-center gap-4">
+              <i class="fa-brands fa-bluetooth"></i>
+                  <p>${lang === "en" ? 'Bluetooth' : 'بلوتوث'}</p>
+                  </div>
+
+                  <p>${car.music.bluetooth ? '<i class="fa-solid fa-check"></i>' : '<i class="fa-solid fa-xmark"></i>'}</p>
+                  </div>
+
+
+
+                        <div class="d-flex align-items-center justify-content-between">
+
+                 <div class="d-flex align-items-center gap-4">
+<i class="fa-solid fa-radio"></i>                  <p>${lang === "en" ? 'AM / FM Radio' : 'الراديو'}</p>
+                  </div>
+
+                  <p>${car.music.amfm ? '<i class="fa-solid fa-check"></i>' : '<i class="fa-solid fa-xmark"></i>'}</p>
+                  </div>
+
+
+
+                  </div>
+
+
+
+
+
+
                   </div>
                 </div>
               </div>
@@ -146,51 +302,6 @@ fetch("./db/Cars.json")
       `;
 
 
-    }
-
-    
-    function createSpecificationSections(car) {
-      return `
-        ${section("General", [
-          { icon: "fa-gas-pump", label: "Fuel", value: car.general.fuel },
-          { icon: "fa-car", label: "Engine", value: car.general.engine }
-        ])}
-
-        ${section("Safety", [
-          { icon: "fa-shield", label: "Airbags", value: car.saftey.airbags },
-          { icon: "fa-satellite-dish", label: "Sensors", value: car.saftey.sensors ? checkIcon() : xIcon() }
-        ])}
-
-        ${section("Music", [
-          { icon: "fa-brands fa-apple", label: "Apple CarPlay", value: car.music.applecarplay ? checkIcon() : xIcon() },
-          { icon: "fa-brands fa-android", label: "Android Auto", value: car.music.androidauto ? checkIcon() : xIcon() },
-          { icon: "fa-brands fa-bluetooth-b", label: "Bluetooth", value: car.music.bluetooth ? checkIcon() : xIcon() },
-          { icon: "fa-solid fa-radio", label: "AM / FM Radio", value: car.music.amfm ? checkIcon() : xIcon() }
-        ])}
-      `;
-    }
-
-    function section(title, items) {
-      return `
-        <div class="d-flex flex-column gap-2">
-          <p class="fw-bold">${title}</p>
-          <div class="d-flex flex-column gap-3">
-            ${items
-              .map(
-                item => `
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="d-flex align-items-center gap-3">
-                    <i class="fa-solid ${item.icon}"></i>
-                    <p >${item.label}</p>
-                  </div>
-                  <p>${item.value}</p>
-                </div>
-              `
-              )
-              .join("")}
-          </div>
-        </div>
-      `;
     }
 
     const checkIcon = () => `<i class="fa-solid fa-check"></i>`;
@@ -214,7 +325,7 @@ function initCarSwiper() {
     },
     breakpoints: {
       0: {
-        slidesPerView: 1,
+        slidesPerView: 1.3,
         centeredSlides: true,
       },
       768: {
@@ -238,17 +349,20 @@ function initCarSwiper() {
 }
 
     
-    filters.forEach(filter => {
-      filter.addEventListener("click", () => {
-        filters.forEach(f => f.classList.remove("filter_active"));
-        filter.classList.add("filter_active");
+filters.forEach(filter => {
+  filter.addEventListener("click", () => {
+    filters.forEach(f => f.classList.remove("filter_active"));
+    filter.classList.add("filter_active");
 
-        const category = filter.dataset.car_categorie;
-        const filteredCars = category === "All" ? cars : cars.filter(c => c.car_categorie === category);
+    const category = filter.dataset.car_categorie;
+    const filteredCars =
+      category === allLabel
+        ? cars
+        : cars.filter(c => c.car_categorie[lang] === category);
 
-        renderCars(filteredCars);
-      });
-    });
+    renderCars(filteredCars);
+  });
+});
 
     
     renderCars(cars);

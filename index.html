@@ -36,9 +36,33 @@
         <ul>
           <li class="d-none d-lg-flex-inline"><i class="bi bi-search"></i></li>
           <li class="d-none d-lg-flex">Contact us <i class="bi bi-chevron-down"></i></li>
-          <li class="d-none d-md-flex dropdown"><div class="dropdown-toggle" type="button" data-bs-target=""><p>English</p> <i class="bi bi-chevron-down"></i></div></li>
-                    <li class="d-flex d-md-none">En <i class="bi bi-chevron-down"></i></li>
+           <li class="d-none d-lg-flex dropdown">
 
+  <div class="dropdown-toggle center gap-2 h-100" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+    <p class="mb-0">English</p>
+    <i class="bi bi-chevron-down"></i>
+  </div>
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="./index.html"><img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/flags/united-kingdom-flag.png" alt=""><p>English</p></a></li>
+    <li><a class="dropdown-item" href="./Rtl.html"><img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/flags/saudi-arabia-flag.png" alt=""><p>Arabic</p></a></li>
+  </ul>
+
+</li>
+
+           <li class="d-flex d-md-none dropdown">
+
+  <div class="dropdown-toggle center gap-2 h-100" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+    <p class="mb-0">En</p>
+    <i class="bi bi-chevron-down"></i>
+  </div>
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="./index.html"><img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/flags/united-kingdom-flag.png" alt=""><p>English</p></a></li>
+    <li><a class="dropdown-item" href="./Rtl.html"><img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/flags/saudi-arabia-flag.png" alt=""><p>Arabic</p></a></li>
+  </ul>
+
+</li>
           <li class="d-none d-lg-flex-inline"><i class="bi bi-person-fill"></i> <p class="d-none d-md-flex">Log in</p></li>
          <li class="d-flex-inline d-lg-none"      
             class="navbar-toggler"
@@ -61,10 +85,11 @@
 </div>
 
 
-      <div class="dropdown px-5" id="dropdown">
+
+      <div class="customdropdown px-4 px-md-3 px-xl-5" id="dropdown">
 
            <div class="d-flex justify-content-center leftheader align-items-center">
-        <img src="./assets/images/logo_no_bg.png" alt="">
+        <img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/logo.png" alt="">
           <ul>
           <li>Home</li>
           <li>Operating Lease</li>
@@ -114,9 +139,12 @@
   aria-controls="toggleDiv" href="#" data-bs-target="#BusinessSolutionsdropdown" data-bs-toggle="collapse"  >Business Solutions</a>
             </li>
             <ul id="BusinessSolutionsdropdown" class="collapse">
-              <li>Car Rental</li>
-              <li>Chauffeur</li>
-              <li>Carsharing</li>
+              <li>Home</li>
+              <li>Last Mile</li>
+              <li>Group Transportaion</li>
+              <li>Car Trading</li>
+              <li>Linehaul & Cross Border</li>
+              <li>Operating Lease</li>
 
             </ul>
   
@@ -166,8 +194,8 @@
           </div>
         </div>
       </div>
-      <div class="main_prev swiper-button-next"><i class="bi bi-arrow-right"></i></div>
-      <div class="main_next swiper-button-prev"><i class="bi bi-arrow-left"></i></div>
+      <div class="main_prev swiper-button-next d-none d-md-flex center"><i class="bi bi-arrow-right"></i></div>
+      <div class="main_next swiper-button-prev d-none d-md-flex center"><i class="bi bi-arrow-left"></i></div>
       <div class="main_pagination swiper-pagination"></div>
 
     </div>
@@ -240,7 +268,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 p-0">
+                  <div class="col-12 col-md-6">
                     <div class="img-container">
                       <img src="./assets/images/secondary2.jpg" alt="">
                     </div>
@@ -278,7 +306,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 p-0">
+                  <div class="col-12 col-md-6">
                     <div class="img-container">
                       <img src="./assets/images/secondary3.jpg" alt="">
                     </div>
@@ -307,7 +335,7 @@
 
 
 
-  <section class="carswiper">
+  <section class="carswiper padding-top-100 padding-bottom-100">
     <div class="container-fluid">
       <div class="row justify-content-between">
         <div class="col-lg-5 col-12 center pe-md-5 pe-3">
@@ -347,7 +375,7 @@
 
               </div>
             </div>
-            <div class="col-12">
+            <div class="col-12 p-0">
               <div class="car_swiper swiper">
 
                 <div class="car_wrapper swiper-wrapper" id="car_wrapper">
@@ -537,7 +565,7 @@
         <div class="col-md-4 col-12 position-relative">
 
           <div class="center flex-column h-100 align-items-start">
-          <h1 class="d-flex d-lg-none fs-1 text-lg-center">Make the shift-start your partnership now!</h1>
+          <h1 class="d-flex d-lg-none fs-1 text-center">Make the shift-start your partnership now!</h1>
           <h1 class="d-none d-lg-flex">Make the shift-start your partnership now!</h1>
 
           <p class="d-none d-md-flex text-lg-center w-100">Fill out the form below to connect with SHIFT and explore tailored solutions for your busienss needs</p>
@@ -888,7 +916,7 @@
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample">
+            >
             <div class="accordion-body">
               Accordion 1 content
             </div>
@@ -903,7 +931,7 @@
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample">
+            >
             <div class="accordion-body">
               Accordion 2 content
             </div>
@@ -918,7 +946,7 @@
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-            data-bs-parent="#accordionExample">
+            >
             <div class="accordion-body">
               Accordion 3 content
             </div>
@@ -939,7 +967,19 @@
       <div class="row gap-5">
         <div class="col-12 d-flex justify-content-between w-100">
           <img src="./assets/images/whitelogo.png" alt="">
-          <p class="d-flex gap-2 align-items-center"><span>English</span><i class="fa-solid fa-chevron-down"></i></p>
+                         <p class="d-none d-lg-flex dropdown">
+
+  <div class="dropdown-toggle center gap-2 h-100" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+    <p class="mb-0">English</p>
+  </div>
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item d-flex align-items-center gap-2" href="./index.html"><img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/flags/united-kingdom-flag.png" alt=""><p>English</p></a></li>
+    <li><a class="dropdown-item d-flex align-items-center gap-2" href="./Rtl.html"><img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/flags/saudi-arabia-flag.png" alt=""><p>Arabic</p></a></li>
+  </ul>
+
+</p>
+
         </div>
         <div class="col-12">
           <img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/app-store.png" alt="">

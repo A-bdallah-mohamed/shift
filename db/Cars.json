@@ -1,216 +1,334 @@
 [
-
-
-    {
-        "name": "Isuzu 4 Ton Truck",
-        "year": 2024,
-        "car_categorie": "Truck",
-        "price": 350,
-        "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/ISUZU-4TON-Truck.png",
-        "general": {
-            "fuel": "Diesel",
-            "engine": "5.2L Turbo Diesel"
-        },
-        "saftey": {
-            "airbags": "Driver",
-            "sensors": false
-        },
-        "music": {
-            "applecarplay": false,
-            "androidauto": false,
-            "bluetooth": true,
-            "amfm": true
-        },
-        "capacity": {
-            "people": 3,
-            "doors": 2,
-            "bags": 0
-        }
+  {
+    "name": {
+      "en": "Isuzu 4 Ton Truck",
+      "ar": "شاحنة إيسوزو 4 طن"
     },
-    {
-        "name": "MAN Tractor Head",
-        "year": 2024,
-        "car_categorie": "Tractor Head",
-        "price": 850,
-        "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/MAN-tractor-head.png",
-        "general": {
-            "fuel": "Diesel",
-            "engine": "12.4L Turbo Diesel"
-        },
-        "saftey": {
-            "airbags": "Driver",
-            "sensors": true
-        },
-        "music": {
-            "applecarplay": false,
-            "androidauto": false,
-            "bluetooth": true,
-            "amfm": true
-        },
-        "capacity": {
-            "people": 2,
-            "doors": 2,
-            "bags": 0
-        }
+    "year": 2024,
+    "car_categorie": {
+      "en": "Truck",
+      "ar": "شاحنة"
     },
-    {
-        "name": "BMW 7 Series",
-        "year": 2024,
-        "car_categorie": "Sedan",
-        "price": 200,
-        "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/BMW-7-Series-Sedan.png",
-        "general": {
-            "fuel": "petrol 95",
-            "engine": "1.5L"
-        },
-        "saftey": {
-            "airbags": "Front",
-            "sensors": true
-        },
-
-
-        "music": {
-            "applecarplay": true,
-            "androidauto": true,
-            "bluetooth": true,
-            "amfm": true
-        },
-        "capacity": {
-            "people": 4,
-            "doors": 4,
-            "bags": 4
-        }
+    "price": 350,
+    "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/ISUZU-4TON-Truck.png",
+    "general": {
+      "fuel": {
+        "en": "Diesel",
+        "ar": "ديزل"
+      },
+      "engine": {
+        "en": "5.2L Turbo Diesel",
+        "ar": "5.2 لتر تيربو ديزل"
+      }
     },
-    {
-        "name": "Nissan X-Trail",
-        "year": 2024,
-        "car_categorie": "SUV",
-        "price": 320,
-        "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/Nissan--xtrail-Suv.png",
-        "general": {
-            "fuel": "Petrol 95",
-            "engine": "2.5L I4"
-        },
-        "saftey": {
-            "airbags": "Front, Side, Curtain",
-            "sensors": true
-        },
-        "music": {
-            "applecarplay": true,
-            "androidauto": true,
-            "bluetooth": true,
-            "amfm": true
-        },
-        "capacity": {
-            "people": 5,
-            "doors": 5,
-            "bags": 4
-        }
+    "safety": {
+      "airbags": {
+        "en": "Driver",
+        "ar": "السائق"
+      },
+      "sensors": false
     },
-    {
-        "name": "Range Rover Luxury",
-        "year": 2024,
-        "car_categorie": "SUV",
-        "price": 120,
-        "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/Ranger-Rover-Luxary-SUV.png",
-        "general": {
-            "fuel": "Petrol 98 / Hybrid",
-            "engine": "3.0L Turbocharged I6 Mild Hybrid"
-        },
-        "saftey": {
-            "airbags": "Front, Side, Curtain, Knee",
-            "sensors": true
-        },
-        "music": {
-            "applecarplay": true,
-            "androidauto": true,
-            "bluetooth": true,
-            "amfm": true,
-            "premium_sound_system": "Meridian Surround"
-        },
-        "capacity": {
-            "people": 5,
-            "doors": 5,
-            "bags": 5
-        }
+    "music": {
+      "applecarplay": false,
+      "androidauto": false,
+      "bluetooth": true,
+      "amfm": true
     },
-    {
-        "name": "Nissan X-Terra",
-        "year": 2024,
-        "car_categorie": "SUV",
-        "price": 350,
-        "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/Nissan-Xterra-SUV.png",
-        "general": {
-            "fuel": "Petrol 95",
-            "engine": "2.5L I4"
-        },
-        "saftey": {
-            "airbags": "Front, Side, Curtain",
-            "sensors": true
-        },
-        "music": {
-            "applecarplay": true,
-            "androidauto": true,
-            "bluetooth": true,
-            "amfm": true
-        },
-        "capacity": {
-            "people": 7,
-            "doors": 5,
-            "bags": 4
-        }
-    }, {
-        "name": "Toyota Hiace Van Standard Roof",
-        "year": 2024,
-        "car_categorie": "Van",
-        "price": 280,
-        "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/Toyota-HIACE-VAN-STD-Roof-Van.png",
-        "general": {
-            "fuel": "Petrol 95 / Diesel",
-            "engine": "2.8L Turbo Diesel"
-        },
-        "saftey": {
-            "airbags": "Driver, Front Passenger",
-            "sensors": true
-        },
-        "music": {
-            "applecarplay": true,
-            "androidauto": true,
-            "bluetooth": true,
-            "amfm": true
-        },
-        "capacity": {
-            "people": 12,
-            "doors": 4,
-            "bags": 6
-        }
-    },
-    {
-        "name": "Peugeot Expert L3",
-        "year": 2024,
-        "car_categorie": "Van",
-        "price": 310,
-        "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/Peugeot-Expert--L3-Van.png",
-        "general": {
-            "fuel": "Diesel",
-            "engine": "2.0L BlueHDi"
-        },
-        "saftey": {
-            "airbags": "Driver, Passenger",
-            "sensors": true
-        },
-        "music": {
-            "applecarplay": true,
-            "androidauto": true,
-            "bluetooth": true,
-            "amfm": true
-        },
-        "capacity": {
-            "people": 3,
-            "doors": 5,
-            "bags": 8
-        }
+    "capacity": {
+      "people": 3,
+      "doors": 2,
+      "bags": 0
     }
-
-
+  },
+  {
+    "name": {
+      "en": "MAN Tractor Head",
+      "ar": "رأس جر مان"
+    },
+    "year": 2024,
+    "car_categorie": {
+      "en": "Tractor Head",
+      "ar": "رأس جر"
+    },
+    "price": 850,
+    "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/MAN-tractor-head.png",
+    "general": {
+      "fuel": {
+        "en": "Diesel",
+        "ar": "ديزل"
+      },
+      "engine": {
+        "en": "12.4L Turbo Diesel",
+        "ar": "12.4 لتر تيربو ديزل"
+      }
+    },
+    "safety": {
+      "airbags": {
+        "en": "Driver",
+        "ar": "السائق"
+      },
+      "sensors": true
+    },
+    "music": {
+      "applecarplay": false,
+      "androidauto": false,
+      "bluetooth": true,
+      "amfm": true
+    },
+    "capacity": {
+      "people": 2,
+      "doors": 2,
+      "bags": 0
+    }
+  },
+  {
+    "name": {
+      "en": "BMW 7 Series",
+      "ar": "بي إم دبليو الفئة السابعة"
+    },
+    "year": 2024,
+    "car_categorie": {
+      "en": "Sedan",
+      "ar": "سيدان"
+    },
+    "price": 200,
+    "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/BMW-7-Series-Sedan.png",
+    "general": {
+      "fuel": {
+        "en": "Petrol 95",
+        "ar": "بنزين 95"
+      },
+      "engine": {
+        "en": "1.5L",
+        "ar": "1.5 لتر"
+      }
+    },
+    "safety": {
+      "airbags": {
+        "en": "Front",
+        "ar": "أمامي"
+      },
+      "sensors": true
+    },
+    "music": {
+      "applecarplay": true,
+      "androidauto": true,
+      "bluetooth": true,
+      "amfm": true
+    },
+    "capacity": {
+      "people": 4,
+      "doors": 4,
+      "bags": 4
+    }
+  },
+  {
+    "name": {
+      "en": "Nissan X-Trail",
+      "ar": "نيسان إكس تريل"
+    },
+    "year": 2024,
+    "car_categorie": {
+      "en": "SUV",
+      "ar": "دفع رباعي"
+    },
+    "price": 320,
+    "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/Nissan--xtrail-Suv.png",
+    "general": {
+      "fuel": {
+        "en": "Petrol 95",
+        "ar": "بنزين 95"
+      },
+      "engine": {
+        "en": "2.5L I4",
+        "ar": "2.5 لتر I4"
+      }
+    },
+    "safety": {
+      "airbags": {
+        "en": "Front, Side, Curtain",
+        "ar": "أمامي، جانبي، ستارة"
+      },
+      "sensors": true
+    },
+    "music": {
+      "applecarplay": true,
+      "androidauto": true,
+      "bluetooth": true,
+      "amfm": true
+    },
+    "capacity": {
+      "people": 5,
+      "doors": 5,
+      "bags": 4
+    }
+  },
+  {
+    "name": {
+      "en": "Range Rover Luxury",
+      "ar": "رنج روفر لاكشري"
+    },
+    "year": 2024,
+    "car_categorie": {
+      "en": "SUV",
+      "ar": "دفع رباعي"
+    },
+    "price": 120,
+    "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/Ranger-Rover-Luxary-SUV.png",
+    "general": {
+      "fuel": {
+        "en": "Petrol 98 / Hybrid",
+        "ar": "بنزين 98 / هجين"
+      },
+      "engine": {
+        "en": "3.0L Turbocharged I6 Mild Hybrid",
+        "ar": "3.0 لتر تيربو I6 هجين"
+      }
+    },
+    "safety": {
+      "airbags": {
+        "en": "Front, Side, Curtain, Knee",
+        "ar": "أمامي، جانبي، ستارة، ركبة"
+      },
+      "sensors": true
+    },
+    "music": {
+      "applecarplay": true,
+      "androidauto": true,
+      "bluetooth": true,
+      "amfm": true,
+      "premium_sound_system": {
+        "en": "Meridian Surround",
+        "ar": "نظام ميريديان المحيطي"
+      }
+    },
+    "capacity": {
+      "people": 5,
+      "doors": 5,
+      "bags": 5
+    }
+  },
+  {
+    "name": {
+      "en": "Nissan X-Terra",
+      "ar": "نيسان إكس تيرا"
+    },
+    "year": 2024,
+    "car_categorie": {
+      "en": "SUV",
+      "ar": "دفع رباعي"
+    },
+    "price": 350,
+    "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/Nissan-Xterra-SUV.png",
+    "general": {
+      "fuel": {
+        "en": "Petrol 95",
+        "ar": "بنزين 95"
+      },
+      "engine": {
+        "en": "2.5L I4",
+        "ar": "2.5 لتر I4"
+      }
+    },
+    "safety": {
+      "airbags": {
+        "en": "Front, Side, Curtain",
+        "ar": "أمامي، جانبي، ستارة"
+      },
+      "sensors": true
+    },
+    "music": {
+      "applecarplay": true,
+      "androidauto": true,
+      "bluetooth": true,
+      "amfm": true
+    },
+    "capacity": {
+      "people": 7,
+      "doors": 5,
+      "bags": 4
+    }
+  },
+  {
+    "name": {
+      "en": "Toyota Hiace Van Standard Roof",
+      "ar": "تويوتا هايس فان - سقف قياسي"
+    },
+    "year": 2024,
+    "car_categorie": {
+      "en": "Van",
+      "ar": "فان"
+    },
+    "price": 280,
+    "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/Toyota-HIACE-VAN-STD-Roof-Van.png",
+    "general": {
+      "fuel": {
+        "en": "Petrol 95 / Diesel",
+        "ar": "بنزين 95 / ديزل"
+      },
+      "engine": {
+        "en": "2.8L Turbo Diesel",
+        "ar": "2.8 لتر تيربو ديزل"
+      }
+    },
+    "safety": {
+      "airbags": {
+        "en": "Driver, Front Passenger",
+        "ar": "السائق، الراكب الأمامي"
+      },
+      "sensors": true
+    },
+    "music": {
+      "applecarplay": true,
+      "androidauto": true,
+      "bluetooth": true,
+      "amfm": true
+    },
+    "capacity": {
+      "people": 12,
+      "doors": 4,
+      "bags": 6
+    }
+  },
+  {
+    "name": {
+      "en": "Peugeot Expert L3",
+      "ar": "بيجو إكسبيرت L3"
+    },
+    "year": 2024,
+    "car_categorie": {
+      "en": "Van",
+      "ar": "فان"
+    },
+    "price": 310,
+    "img": "https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/fleet/operating-lease/Peugeot-Expert--L3-Van.png",
+    "general": {
+      "fuel": {
+        "en": "Diesel",
+        "ar": "ديزل"
+      },
+      "engine": {
+        "en": "2.0L BlueHDi",
+        "ar": "2.0 لتر BlueHDi"
+      }
+    },
+    "safety": {
+      "airbags": {
+        "en": "Driver, Passenger",
+        "ar": "السائق، الراكب"
+      },
+      "sensors": true
+    },
+    "music": {
+      "applecarplay": true,
+      "androidauto": true,
+      "bluetooth": true,
+      "amfm": true
+    },
+    "capacity": {
+      "people": 3,
+      "doors": 5,
+      "bags": 8
+    }
+  }
 ]

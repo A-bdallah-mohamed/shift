@@ -1,5 +1,6 @@
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lateef", sans-serif;
+  font-size: 20px;
 }
 
 
@@ -17,11 +18,18 @@ header {
   display: inline-flex;
   flex-direction: column;
 }
-
+.mainswiper h1{
+    font-size: 2.5rem;
+}
+.mainswiper p{
+    font-size: 1.5rem;
+}
 .mainswiper {
   height: calc(100vh - 80px);
 }
-
+.tab p{
+  font-size: 22px !important;
+}
 .mainswiperslide {
   height: 100%;
   width: 100%;
@@ -58,19 +66,8 @@ header {
 .tab:hover img {
   transform: rotate(5deg) scale(1.1);
 }
-
-.tab:hover i {
-  transform: rotate(0deg);
-  background-color: #012966;
-
-}
-
-.tabtext {
-  width: 100%;
-}
-
 .tabtext i {
-  transform: rotate(-45deg);
+  transform: rotate(-130deg);
   transition: 0.3s ease all;
   width: 40px;
   height: 40px;
@@ -79,6 +76,18 @@ header {
   justify-content: center;
   border-radius: 50px;
 }
+
+.tab:hover i {
+  transform: rotate(-180deg);
+  background-color: #012966;
+
+}
+
+.tabtext {
+  width: 100%;
+  gap: 50px;
+}
+
 
 .tabimgcontainer {
   flex: 0 0 40%;
@@ -187,7 +196,7 @@ li i {
 
 .swiper-button-prev:After,
 .swiper-button-next:After {
-  content: "";
+  display: none;
 }
 
 .swiper-button-next,
@@ -218,6 +227,7 @@ li i {
   gap: 10px;
   font-weight: 500;
   color: #07206a;
+  font-size: 25px;
 }
 
 .bigtitle {
@@ -327,7 +337,7 @@ h2 {
 
 .reasoncontent p {
   font-size: 16px;
-  padding: 0px 10px 50px 10px;
+  padding: 0 10px;
 }
 
 .big-Title {
@@ -558,7 +568,7 @@ color: rgb(0, 0, 0);
 }
 
 .accordion-button {
-  padding: 30px 70px 30px 70px;
+  padding: 30px;
   font-size: 24px;
   font-weight: bold;
 }
@@ -628,7 +638,7 @@ body {
   border: none;
   font-weight: 500;
   color: #07206a;
-  font-size: 18px;
+  font-size: 25px;
   max-width: auto;
   display: inline-block;
 }
@@ -988,7 +998,7 @@ padding: 5px;
 
 .carswiper {
   background: linear-gradient(to bottom, #181a1f, #393939);
-  padding: 100px 0 100px 80px;
+  padding: 100px 80px 100px 0px;
   position: relative;
 }
 
@@ -1003,7 +1013,7 @@ padding: 5px;
 }
 
 .carswipercontent p {
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 500;
 }
 
@@ -1094,7 +1104,8 @@ transform: translateX(-100px) ;
 .car_wrapper {
   align-items: flex-end;
   display: flex;
-  margin-top: 15px;
+    margin-top: 15px;
+
 }
 
 .swiper-autoheight .swiper-wrapper {
@@ -1104,9 +1115,8 @@ transform: translateX(-100px) ;
 .car_pagination {
   align-items: center;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   gap: 15px;
-  padding: 0 300px 0 0;
 }
 
 .cartype p {
@@ -1229,6 +1239,7 @@ ul li:hover::after {
 
 .newscontainer img {
   max-width: 100%;
+  min-width: 100%;
 }
 
 .newscontainer {
@@ -1333,7 +1344,9 @@ height: 80vh;
 .cartab span{
   font-weight: 800;
 }
-
+.accordion-header p{
+    font-size: 18px;
+}
 .h-md-100{
   height: 100%;
 }
