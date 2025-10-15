@@ -22,6 +22,7 @@ background-size: contain;
 }
 .accordion-button::after{
     display: flex;
+    margin-left: 0;
 }
 
 .accordion-button:not(.collapsed) {
@@ -936,7 +937,9 @@ overflow: hidden;
   font-size: 10px;
   margin-bottom: 20px;
 }
-
+.accordion-button{
+  text-align: right;
+}
 .form {
   margin-top: 100px;
   padding-top: 100px;
@@ -1074,11 +1077,14 @@ width: 100%;
   margin-bottom: 8px;
 }
 .searchinput{
-  padding: 0 0 0 15px;
+  padding: 0 15px 0 0px;
   color: black;
   margin-bottom: 20px;
   border-radius: 8px;
   background-color: rgb(245, 245, 245);
+}
+.tabcomponent.active{
+  background-color: #d6ddf8;
 }
 .searchinput input:focus{
 outline: none;

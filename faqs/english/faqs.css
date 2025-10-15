@@ -104,7 +104,9 @@ cursor: pointer;
     border: 1px solid #d9d9d9;
     gap: 20px;
 }
-
+.tabcomponent.active{
+  background-color: #d6ddf8;
+}
 .accordioncomponentcontainer{
     display: none;
 }
