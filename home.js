@@ -35,7 +35,7 @@ const benefitsSwiper = new Swiper(".benefits_swiper", {
   },
 });
 
-fetch("../../db/Cars.json")
+fetch("./db/Cars.json")
   .then(res => res.json())
   .then(cars => {
     const lang = document.documentElement.lang || 'en';
