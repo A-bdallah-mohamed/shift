@@ -26,7 +26,9 @@ background-size: contain;
     display: flex;
     margin-left: 0;
 }
-
+.accordion-body p{
+  text-align: right !important;
+}
 .accordion-button:not(.collapsed) {
     border-bottom: 1px solid gray;
     background-color: transparent;

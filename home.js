@@ -431,66 +431,93 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const searchinput = document.getElementById("search")
-const accordionscontainers = document.querySelectorAll('.accordioncomponentcontainer')
-const divs = document.querySelectorAll('.accordion-item');""
-const firstcontainer =document.getElementById("billingaccordions")
-searchinput.addEventListener("input" , ()=>{
 
-if(searchinput.value.trim() !== ""){
-isRestored = true;
-    const query = searchinput.value.trim().toLowerCase();
+const searchinput = document.getElementById("search");
+const accordionscontainers = document.querySelectorAll(".accordioncomponentcontainer");
+const divs = document.querySelectorAll(".accordion-item");
+const firstcontainer = document.getElementById("billingaccordions");
 
-const regex = new RegExp(`\\b${query}\\b`, "i");
+function clearHighlights() {
+  document.querySelectorAll("mark").forEach(mark => {
+    mark.replaceWith(mark.textContent);
+  });
+}
 
-  console.log(regex)
+searchinput.addEventListener("input", () => {
+  const query = searchinput.value.trim().toLowerCase();
 
-  accordionscontainers.forEach(container => {
-    container.classList.add("show")
-  })
+  clearHighlights();
 
-  divs.forEach(div => {
-    div.classList.add("d-none")
+  if (query !== "") {
+    const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`, "gi");
 
-  if(regex.test(div.textContent) || div.textContent.toLocaleLowerCase().includes(query)){
-        div.classList.remove("d-none")
-const button = div.querySelector(".accordion-button")
-const body = div. querySelector(".accordion-collapse")
-button.classList.remove(".collapsed")
-body.classList.add("show")
-  }
+    accordionscontainers.forEach(container => container.classList.add("show"));
 
-  accordionscontainers.forEach(container => {
-      const visibleItems = container.querySelectorAll('.accordion-item:not(.d-none)');
-      if (visibleItems.length === 0) {
-        container.classList.remove("show");
+    divs.forEach(div => {
+      div.classList.add("d-none");
+
+      const header = div.querySelector(".accordion-button");
+      const bodyParagraph = div.querySelector(".accordion-body p");
+      const headerText = header.textContent.toLowerCase();
+      const bodyText = bodyParagraph ? bodyParagraph.textContent.toLowerCase() : "";
+
+      if (headerText.includes(query) || bodyText.includes(query)) {
+        div.classList.remove("d-none");
+
+        const button = div.querySelector(".accordion-button");
+        const body = div.querySelector(".accordion-collapse");
+        button.classList.remove("collapsed");
+        body.classList.add("show");
+
+        const originalHeaderText = header.textContent;
+        const highlightedHeader = originalHeaderText.replace(regex, "<mark>$1</mark>");
+        header.innerHTML = highlightedHeader;
+
+        if (bodyParagraph) {
+          const originalBodyText = bodyParagraph.textContent;
+          const highlightedBody = originalBodyText.replace(regex, "<mark>$1</mark>");
+          bodyParagraph.innerHTML = highlightedBody;
+        }
+
+        console.log("Header after highlight:", header.innerHTML);
       } else {
-        container.classList.add("show");
+        header.innerHTML = header.textContent;
+        if (bodyParagraph) {
+          bodyParagraph.innerHTML = bodyParagraph.textContent;
+        }
       }
     });
-  })
 
-}
-else{
+       
+    accordionscontainers.forEach(container => {
+      const visibleItems = container.querySelectorAll(".accordion-item:not(.d-none)");
+      container.classList.toggle("show", visibleItems.length > 0);
+    });
+  } else {
     divs.forEach(div => {
-    div.classList.remove("d-none")
-const button = div.querySelector(".accordion-button")
-const body = div. querySelector(".accordion-collapse")
-button.classList.add(".collapsed")
-body.classList.remove("show")
-  })
-accordionscontainers.forEach(container => {
-  container.classList.remove("show")
-})
-firstcontainer.classList.add("show")
-}
+      div.classList.remove("d-none");
+      const button = div.querySelector(".accordion-button");
+      const body = div.querySelector(".accordion-collapse");
+      const header = div.querySelector(".accordion-button");
+      const bodyParagraph = div.querySelector(".accordion-body p");
+
+      button.classList.add("collapsed");
+      body.classList.remove("show");
+
+      header.innerHTML = header.textContent;
+      if (bodyParagraph) {
+        bodyParagraph.innerHTML = bodyParagraph.textContent;
+      }
+    });
+
+    accordionscontainers.forEach(container => container.classList.remove("show"));
+    firstcontainer.classList.add("show");
+  }
+});
 
 
 
 
-  
-
-})
 
 const tabstoggle = document.getElementById("tabstoggle")
 const tabscotaniner = document.querySelector(".tabscotaniner")
