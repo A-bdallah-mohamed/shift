@@ -1678,6 +1678,7 @@ background-color: white;
 .tabs-accordioncontainer{
   display: flex;
   flex-direction: column;
+  justify-content: start !important;
 }
   .reasons .container-fluid::before,
   .faq::before {
