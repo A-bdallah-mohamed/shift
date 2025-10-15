@@ -1,5 +1,8 @@
+
+
 const mainSwiper = new Swiper(".mainswiper", {
   loop: true,
+
   pagination: {
     el: ".main_pagination",
     clickable: true,
@@ -32,7 +35,7 @@ const benefitsSwiper = new Swiper(".benefits_swiper", {
   },
 });
 
-fetch("./db/Cars.json")
+fetch("../../db/Cars.json")
   .then(res => res.json())
   .then(cars => {
     const lang = document.documentElement.lang || 'en';
@@ -46,7 +49,9 @@ fetch("./db/Cars.json")
 
     
     filterContainer.innerHTML = allCategories
-      .map(cat => `<div class="filter" data-car_categorie="${cat}">${cat}</div>`)
+      .map(cat =>  `<div class="filter" data-car_categorie="${cat}">${cat}</div>`)
+         
+
       .join("");
 
     const filters = document.querySelectorAll(".filter");
@@ -369,6 +374,136 @@ filters.forEach(filter => {
     initCarSwiper();
   });
 
-document.getElementById("businessdropdown")?.addEventListener("click", () => {
-  document.getElementById("dropdown")?.classList.toggle("dropdownshow");
+
+
+  const businessdropdownbtn = document.getElementById("businessdropdown")
+  const contactusbutton = document.getElementById("contact-us")
+const businessdropdown = document.getElementById("dropdown")
+const conactusdropdown = document.getElementById("contact-us-dropdown")
+
+
+businessdropdownbtn.addEventListener("click", () => {
+   conactusdropdown.classList.remove("dropdownshow");
+if(businessdropdown.classList.contains("dropdownshow")) {
+businessdropdown.classList.remove("dropdownshow")
+}
+else{
+   businessdropdown.classList.add("dropdownshow");
+
+}
 });
+
+
+
+document.getElementById("contact-us")?.addEventListener("click", () => {
+
+    businessdropdown.classList.remove("dropdownshow");
+if(conactusdropdown.classList.contains("dropdownshow")) {
+conactusdropdown.classList.remove("dropdownshow")
+}
+else{
+    conactusdropdown.classList.add("dropdownshow");
+}
+  
+});
+
+document.addEventListener("click", (e) => {
+  if (
+    !businessdropdown?.contains(e.target) && 
+    !conactusdropdown?.contains(e.target) &&
+    !contactusbutton?.contains(e.target) && 
+    !businessdropdownbtn?.contains(e.target)
+  ) {
+    businessdropdown?.classList.remove("dropdownshow");
+    conactusdropdown?.classList.remove("dropdownshow");
+  }
+});
+
+window.addEventListener("scroll", () => {
+  const header = document.querySelector("header");
+  const scrollY = window.scrollY;
+  const isLargeScreen = window.innerWidth >= 1024;
+
+  if (isLargeScreen && scrollY >= 1000) {
+    header.classList.add("fixed-header");
+  } else {
+    header.classList.remove("fixed-header");
+  }
+});
+
+const searchinput = document.getElementById("search")
+const accordionscontainers = document.querySelectorAll('.accordioncomponentcontainer')
+const divs = document.querySelectorAll('.accordion-item');""
+const firstcontainer =document.getElementById("billingaccordions")
+searchinput.addEventListener("input" , ()=>{
+
+if(searchinput.value.trim() !== ""){
+isRestored = true;
+    const query = searchinput.value.trim().toLowerCase();
+
+const regex = new RegExp(`\\b${query}\\b`, "i");
+
+  console.log(regex)
+
+  accordionscontainers.forEach(container => {
+    container.classList.add("show")
+  })
+
+  divs.forEach(div => {
+    div.classList.add("d-none")
+
+  if(regex.test(div.textContent) || div.textContent.toLocaleLowerCase().includes(query)){
+        div.classList.remove("d-none")
+const button = div.querySelector(".accordion-button")
+const body = div. querySelector(".accordion-collapse")
+button.classList.remove(".collapsed")
+body.classList.add("show")
+  }
+
+  accordionscontainers.forEach(container => {
+      const visibleItems = container.querySelectorAll('.accordion-item:not(.d-none)');
+      if (visibleItems.length === 0) {
+        container.classList.remove("show");
+      } else {
+        container.classList.add("show");
+      }
+    });
+  })
+
+}
+else{
+    divs.forEach(div => {
+    div.classList.remove("d-none")
+const button = div.querySelector(".accordion-button")
+const body = div. querySelector(".accordion-collapse")
+button.classList.add(".collapsed")
+body.classList.remove("show")
+  })
+accordionscontainers.forEach(container => {
+  container.classList.remove("show")
+})
+firstcontainer.classList.add("show")
+}
+
+
+
+
+  
+
+})
+
+const tabstoggle = document.getElementById("tabstoggle")
+const tabscotaniner = document.querySelector(".tabscotaniner")
+  const alltabs = document.querySelectorAll(".tabcomponent")
+  const tabstoggleinner = document.getElementById("tabstoggleinner")
+  alltabs.forEach(tab => (
+    tab.addEventListener("click", ()=> {
+        const activetab = document.querySelector(".tabcomponent.active")
+tabstoggleinner.innerHTML = activetab.innerHTML 
+  tabscotaniner.classList.toggle("active")
+
+    })
+  ))
+tabstoggle.addEventListener("click", () => {
+  tabscotaniner.classList.toggle("active")
+})
