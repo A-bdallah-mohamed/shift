@@ -1,0 +1,1089 @@
+<html >
+
+<head>
+  
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="faqs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+
+      <header class="d-flex justify-content-between darkblue px-4 px-md-3 px-xl-5">
+      <div class="d-flex justify-content-center leftheader align-items-center">
+        <a href="../../operation-lease/english/index.html">
+        <img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/logo.png"  alt="">
+        </a>
+        <ul class="d-none d-lg-flex">
+          <li>Chauffeur</li>
+          <li>Carsharing</li>
+          <li>Car Rental</li>
+          <li id="businessdropdown">Business Solutions <i class="bi bi-chevron-down "></i></li>
+        </ul>
+      </div>
+
+      <div class="d-flex justify-content-center leftheader align-items-center">
+        <ul>
+          <li class="d-none d-lg-flex-inline"><i class="bi bi-search"></i></li>
+          <li class="d-none d-lg-flex" id="contact-us">Contact us <i class="bi bi-chevron-down"></i></li>
+           <li class="d-none d-lg-flex dropdown">
+
+  <div class="dropdown-toggle center gap-2 h-100" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+    <p class="mb-0">English</p>
+    <i class="bi bi-chevron-down"></i>
+  </div>
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="./faqs.html"><img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/flags/united-kingdom-flag.png" alt=""><p>English</p></a></li>
+    <li><a class="dropdown-item" href="../arabic/rtlFaqs.html"><img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/flags/saudi-arabia-flag.png" alt=""><p>Arabic</p></a></li>
+  </ul>
+
+</li>
+
+           <li class="d-flex d-md-none dropdown">
+
+  <div class="dropdown-toggle center gap-2 h-100" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+    <p class="mb-0">En</p>
+    <i class="bi bi-chevron-down"></i>
+  </div>
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="./faqs.html"><img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/flags/united-kingdom-flag.png" alt=""><p>English</p></a></li>
+    <li><a class="dropdown-item" href="../arabic/rtlFaqs.html"><img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/flags/saudi-arabia-flag.png" alt=""><p>Arabic</p></a></li>
+  </ul>
+
+</li>
+          <li class="d-none d-lg-flex-inline"><i class="bi bi-person-fill"></i> <p class="d-none d-md-flex">Log in</p></li>
+         <li class="d-flex-inline d-lg-none"      
+            class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"> <i class="fa-solid fa-bars center"></i></li>
+        </ul>
+      </div>
+
+
+
+
+<div class="modal fade carspecificationmodal p-0 " id="specification" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog center modal-dialog-centered custommodalstyle" role="document">
+    <div class="modal-content" id="specificationswindow" >
+      
+    </div>
+  </div>
+</div>
+
+
+
+      <div class="customdropdown px-4 px-md-3 px-xl-5" id="dropdown">
+
+           <div class="d-flex justify-content-center leftheader align-items-center">
+        <img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/logo.png" alt="">
+          <ul>
+          <li>Home</li>
+          <li>Operating Lease</li>
+          <li>Last Mile</li>
+          <li>Linehaul & Cross Border</li>
+          <li>Group Transportation</li>
+          <li>Car Trading</li>
+        </ul>
+      </div>
+      </div>
+
+
+
+      
+      <div class="customdropdown px-4 px-md-3 px-xl-5" id="contact-us-dropdown">
+
+           <div class="d-flex justify-content-center leftheader align-items-center">
+        <img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/logo.png" alt="">
+          <ul>
+          <li>contact Us</li>
+          <li>About us</li>
+          <li>FAQs</li>
+          <li>SHIFT Pluse</li>
+        </ul>
+      </div>
+      </div>
+
+
+
+
+
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header p-3 justify-content-between fw-bold">
+        <img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/logo.png" alt="">
+       
+          <div class="d-flex align-items-center gap-3 p-0">
+                                <p >En</p>
+                             <i class="bi bi-person-fill"></i>
+          <button type="button" class="btn-close p-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+          </div>
+        
+    </div>
+
+        <div class="offcanvas-body">
+<div class="searchinput d-flex">
+  <span class="center"><i class="bi bi-search"></i></span>
+  <input type="text"  placeholder="Search for">
+</div>          <ul class="navbar-nav ms-auto">
+        
+            <li class="nav-item">
+              <a class="nav-link dropdownn" type="button" aria-expanded="false"
+  aria-controls="toggleDiv" href="#" data-bs-target="#personalusedropdown" data-bs-toggle="collapse"  >Personal use</a>
+            </li>
+            <ul id="personalusedropdown" class="collapse">
+              <li>Car Rental</li>
+              <li>Chauffeur</li>
+              <li>Carsharing</li>
+
+            </ul>
+            <li>
+            <div class="gryaline my-1"></div>
+            </li>
+                   <li class="nav-item">
+              <a class="nav-link dropdownn" type="button" aria-expanded="false"
+  aria-controls="toggleDiv" href="#" data-bs-target="#BusinessSolutionsdropdown" data-bs-toggle="collapse"  >Business Solutions</a>
+            </li>
+            <ul id="BusinessSolutionsdropdown" class="collapse">
+              <li>Home</li>
+              <li>Last Mile</li>
+              <li>Group Transportaion</li>
+              <li>Car Trading</li>
+              <li>Linehaul & Cross Border</li>
+              <li>Operating Lease</li>
+
+            </ul>
+  
+                     <li>   <div class="gryaline my-1"></div></li>
+
+                <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+                <li class="nav-item">
+              <a class="nav-link" href="#">Newsroom</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="faqpage padding-top-100 padding-bottom-100 circlebgcenter">
+    <div class="container">
+<h1 class="fs-1 fs-md0">FAQs</h1>
+<p class="fs-5 text-center">Welcome to FAQ. Let's try to solve your issue. Type your question or<br />just choose from the cateory</p>
+<div class="row center">
+
+    <div class="col-lg-8 col-11 searchbuttoncontainer shadow">
+
+
+        <div class="row gap-3 gap-md-0">
+
+
+
+            <div class="col-md-8 col-12">
+<div class="faqsearchcontainer">
+<div class="searchinput d-flex align-items-center m-0">
+    <i class="bi bi-search"></i>
+    <input type="search" id="search" placeholder="Search a question" >
+</div>
+</div>
+</div>
+
+<div class="col-md col-12">
+    <button type="button" class="basicbutton w-100 h-100" id="searchbutton">ASK</button>
+</div>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+<div class="row tabs-accordioncontainer center padding-top-100 gap-4 gap-lg-0" >
+
+
+    <div class="col-lg-3 col-11 position-relative ">
+      <div class="tabstoggle d-flex d-lg-none togglebutton justify-content-between" id="tabstoggle">
+        <div class="d-flex align-items-center gap-3" id="tabstoggleinner">
+    <div class="icontainer">
+      <i class="bi bi-credit-card-2-front-fill"></i>
+    </div>
+    <p>Billing</p>
+    </div>
+<i class="bi bi-list text-black"></i>
+      </div>
+<div class="tabscotaniner nav nav-tabs" id="myTab" role="tablist">
+
+  <div class="tabcomponent active" role="tab" data-bs-toggle="tab" data-bs-target="#billingaccordions">
+    <div class="icontainer">
+      <i class="bi bi-credit-card-2-front-fill"></i>
+    </div>
+    <p>Billing</p>
+  </div>
+
+  <div class="tabcomponent" role="tab" data-bs-toggle="tab" data-bs-target="#carrentalaccordions">
+    <div class="icontainer">
+      <i class="bi bi-car-front-fill"></i>
+    </div>
+    <p>Car Rental</p>
+  </div>
+
+  <div class="tabcomponent" role="tab" data-bs-toggle="tab" data-bs-target="#chargesfuelaccordions">
+    <div class="icontainer">
+      <i class="bi bi-fuel-pump-fill"></i>
+    </div>
+    <p>Charges & Fuel</p>
+  </div>
+
+  <div class="tabcomponent" role="tab" data-bs-toggle="tab" data-bs-target="#accidentsaccordions">
+    <div class="icontainer">
+      <i class="bi bi-exclamation-triangle-fill"></i>
+    </div>
+    <p>Accidents</p>
+  </div>
+
+  <div class="tabcomponent" role="tab" data-bs-toggle="tab" data-bs-target="#businessaccordions">
+    <div class="icontainer">
+      <i class="bi bi-briefcase-fill"></i>
+    </div>
+    <p>Business</p>
+  </div>
+
+  <div class="tabcomponent" role="tab" data-bs-toggle="tab" data-bs-target="#freightaccordions">
+    <div class="icontainer">
+      <i class="bi bi-truck-front-fill"></i>
+    </div>
+    <p>Freight</p>
+  </div>
+
+  <div class="tabcomponent" role="tab" data-bs-toggle="tab" data-bs-target="#helpaccordions">
+    <div class="icontainer">
+      <i class="bi bi-question-circle-fill"></i>
+    </div>
+    <p>Help</p>
+  </div>
+
+</div>
+</div>
+
+<div class="col">
+<div class="accordionscontainer " id="accordionscontainer" >
+<div class="accordioncomponentcontainer accordion show" id="billingaccordions">
+  <h3>Payment and billing</h3>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOneBilling">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneBilling">
+        Payment options
+      </button>
+    </h2>
+    <div id="collapseOneBilling" class="accordion-collapse collapse" data-bs-parent="#billingaccordions">
+      <div class="accordion-body">
+We accept a variety of payment methods to make your experience smooth and secure. You can complete your booking or order using major credit or debit cards, bank transfers, or trusted digital wallets. All payments are processed through secure, encrypted gateways to protect your information and ensure a safe transaction every time.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwoBilling">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoBilling">
+        Resolve payment issues
+      </button>
+    </h2>
+    <div id="collapseTwoBilling" class="accordion-collapse collapse" data-bs-parent="#billingaccordions">
+      <div class="accordion-body">
+If you’re unable to complete a payment, first verify that your card details or account credentials are correct and that your balance is sufficient. Sometimes, switching browsers or clearing cache can help resolve the issue. If the problem continues, please reach out to our support team with the payment reference or error message, and we’ll assist you promptly in resolving the issue.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThreeBilling">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeBilling">
+        Discounts and promocodes
+      </button>
+    </h2>
+    <div id="collapseThreeBilling" class="accordion-collapse collapse" data-bs-parent="#billingaccordions">
+      <div class="accordion-body">
+We occasionally offer discounts and promotional codes for special events, seasonal campaigns, or loyal customers. These promocodes can reduce your total payment or unlock exclusive benefits. Make sure to check our newsletter or promotions page regularly so you don’t miss out on the latest deals and savings opportunities.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFourBilling">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourBilling">
+        How to get and redeem promocodes
+      </button>
+    </h2>
+    <div id="collapseFourBilling" class="accordion-collapse collapse" data-bs-parent="#billingaccordions">
+      <div class="accordion-body">
+You can receive promocodes by subscribing to our newsletter, participating in our partner programs, or during limited-time events. To redeem a promocode, simply enter it in the designated field during checkout before completing your payment. The discount will apply instantly, and you’ll see the updated total before confirming the transaction.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFiveBilling">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveBilling">
+        Refunds policy
+      </button>
+    </h2>
+    <div id="collapseFiveBilling" class="accordion-collapse collapse" data-bs-parent="#billingaccordions">
+      <div class="accordion-body">
+Our refund policy ensures that customers receive fair and transparent service. Refunds are typically processed within 5–10 business days, depending on your payment provider. If your payment was made using a card or digital wallet, the amount will be credited back to the same account. Please note that processing times may vary based on your bank’s procedures.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSixBilling">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixBilling">
+        Payment clarity
+      </button>
+    </h2>
+    <div id="collapseSixBilling" class="accordion-collapse collapse" data-bs-parent="#billingaccordions">
+      <div class="accordion-body">
+We believe in full payment transparency. Every charge is clearly displayed before you confirm any booking or purchase. You can always review your order summary, including taxes, fees, and any additional costs. If you notice any discrepancies, please contact our billing team immediately so we can review and resolve the issue efficiently.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSevenBilling">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenBilling">
+        Blocked accounts
+      </button>
+    </h2>
+    <div id="collapseSevenBilling" class="accordion-collapse collapse" data-bs-parent="#billingaccordions">
+      <div class="accordion-body">
+If your account is temporarily blocked due to repeated payment failures or security checks, don’t worry. Our system automatically reviews and unlocks accounts once the issue is cleared. You can also reach out to our support team to verify your identity and request manual reactivation. We take these steps to ensure your account and payment information remain safe.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingEightBilling">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEightBilling">
+        Invoices
+      </button>
+    </h2>
+    <div id="collapseEightBilling" class="accordion-collapse collapse" data-bs-parent="#billingaccordions">
+      <div class="accordion-body">
+Invoices are automatically generated once your payment is successfully completed. You can download or print your invoice anytime from your account dashboard. Each invoice includes details about your transaction, taxes, and any discounts applied. If you require a company invoice or custom billing information, please contact our support team for assistance.      </div>
+    </div>
+  </div>
+
+</div>
+<div class="accordioncomponentcontainer accordion " id="carrentalaccordions">
+  <h3>Car rental</h3>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOneCar">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneCar">
+        Booking process
+      </button>
+    </h2>
+    <div id="collapseOneCar" class="accordion-collapse collapse" data-bs-parent="#carrentalaccordions">
+      <div class="accordion-body">
+Booking a car with us is quick and straightforward. Simply select your preferred location, choose the vehicle that suits your needs, and pick your rental dates. Once you confirm your booking, you’ll receive a detailed confirmation email with pickup instructions and additional information about your rental.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwoCar">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoCar">
+        Required documents
+      </button>
+    </h2>
+    <div id="collapseTwoCar" class="accordion-collapse collapse" data-bs-parent="#carrentalaccordions">
+      <div class="accordion-body">
+To rent a car, you’ll need a valid driver’s license, a form of identification such as a passport or national ID, and a credit or debit card in your name. Some vehicle categories may require an international driving permit. Please make sure your documents are up to date to avoid any delays during pickup.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThreeCar">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeCar">
+        Insurance and coverage
+      </button>
+    </h2>
+    <div id="collapseThreeCar" class="accordion-collapse collapse" data-bs-parent="#carrentalaccordions">
+      <div class="accordion-body">
+Our rentals include basic insurance coverage, which protects you in case of minor damages or theft. You can upgrade to premium coverage for added protection and peace of mind. We always recommend reviewing the insurance options carefully before finalizing your booking to understand your level of coverage.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFourCar">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourCar">
+        Pickup and return policy
+      </button>
+    </h2>
+    <div id="collapseFourCar" class="accordion-collapse collapse" data-bs-parent="#carrentalaccordions">
+      <div class="accordion-body">
+You can pick up your car from the selected location at your scheduled time. Please bring all required documents and your booking confirmation. When returning the car, make sure it’s in the same condition and fuel level as received. Late returns may result in additional charges, so we advise returning on time to avoid fees.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFiveCar">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveCar">
+        Vehicle categories
+      </button>
+    </h2>
+    <div id="collapseFiveCar" class="accordion-collapse collapse" data-bs-parent="#carrentalaccordions">
+      <div class="accordion-body">
+We offer a wide range of vehicle categories to suit your needs — from compact cars for city travel to SUVs and luxury vehicles for long journeys or business use. Each category comes with different pricing and features, so you can choose the car that best fits your budget and preferences.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSixCar">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixCar">
+        Mileage limits
+      </button>
+    </h2>
+    <div id="collapseSixCar" class="accordion-collapse collapse" data-bs-parent="#carrentalaccordions">
+      <div class="accordion-body">
+Most of our rentals include a daily mileage allowance. If you plan on traveling long distances, you can choose an unlimited mileage option during booking. Exceeding the mileage limit may result in additional charges, so we recommend checking your plan details before hitting the road.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSevenCar">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenCar">
+        Late return policy
+      </button>
+    </h2>
+    <div id="collapseSevenCar" class="accordion-collapse collapse" data-bs-parent="#carrentalaccordions">
+      <div class="accordion-body">
+If you’re running late for your return, please contact the rental office as soon as possible. Late returns beyond the grace period may incur additional hourly or daily fees. We value flexibility, so informing us in advance allows us to make arrangements and minimize any extra charges.      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="accordioncomponentcontainer accordion" id="chargesfuelaccordions">
+  <h3>Charges & Fuel</h3>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOneAccidents">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneAccidents">
+        In case of an accident
+      </button>
+    </h2>
+    <div id="collapseOneAccidents" class="accordion-collapse collapse" data-bs-parent="#accidentsaccordions">
+      <div class="accordion-body">
+If you are involved in an accident, your safety should always come first. Check for injuries and contact local emergency services immediately if needed. Once everyone is safe, inform our support team and the local police. Do not move the vehicle until instructed, and make sure to document the scene with photos if possible.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwoAccidents">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoAccidents">
+        Reporting damages
+      </button>
+    </h2>
+    <div id="collapseTwoAccidents" class="accordion-collapse collapse" data-bs-parent="#accidentsaccordions">
+      <div class="accordion-body">
+All damages, whether minor or major, must be reported immediately upon return or discovery. Our team will inspect the vehicle and document the issue for insurance purposes. Early reporting helps speed up the resolution process and ensures transparency for both parties.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThreeAccidents">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeAccidents">
+        Insurance coverage in accidents
+      </button>
+    </h2>
+    <div id="collapseThreeAccidents" class="accordion-collapse collapse" data-bs-parent="#accidentsaccordions">
+      <div class="accordion-body">
+Our insurance coverage includes basic protection against damage and theft. If you opted for premium coverage, it may reduce or eliminate certain fees. Please review your rental agreement for specific details, as some incidents such as negligence or unauthorized use may not be covered.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFourAccidents">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourAccidents">
+        Emergency contact numbers
+      </button>
+    </h2>
+    <div id="collapseFourAccidents" class="accordion-collapse collapse" data-bs-parent="#accidentsaccordions">
+      <div class="accordion-body">
+In case of emergencies, you can reach our 24/7 roadside assistance hotline listed in your rental agreement. Local police and ambulance numbers should also be noted at pickup. Keep all emergency numbers handy in your phone or rental paperwork for quick access.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFiveAccidents">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveAccidents">
+        Vehicle replacement process
+      </button>
+    </h2>
+    <div id="collapseFiveAccidents" class="accordion-collapse collapse" data-bs-parent="#accidentsaccordions">
+      <div class="accordion-body">
+If your rented vehicle becomes unusable due to an accident, we will arrange a replacement car as soon as possible, depending on availability. Replacement vehicles may vary in type and model, but we strive to provide one of equal or greater value at no extra cost when the accident is not your fault.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSixAccidents">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixAccidents">
+        Responsibility and liability
+      </button>
+    </h2>
+    <div id="collapseSixAccidents" class="accordion-collapse collapse" data-bs-parent="#accidentsaccordions">
+      <div class="accordion-body">
+Drivers are responsible for following traffic laws and using the vehicle safely. Any negligence or violation that leads to damage may result in partial or full liability for repair costs. Always drive carefully and adhere to local regulations to ensure a smooth rental experience.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSevenAccidents">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenAccidents">
+        Accident documentation
+      </button>
+    </h2>
+    <div id="collapseSevenAccidents" class="accordion-collapse collapse" data-bs-parent="#accidentsaccordions">
+      <div class="accordion-body">
+Documenting an accident properly is crucial. Take clear photos of the vehicle, surrounding area, and any other vehicles involved. Write down the time, location, and a brief description of what happened. This information helps us and the insurance company process your case quickly and fairly.      </div>
+    </div>
+  </div>
+
+</div>
+<div class="accordioncomponentcontainer accordion" id="accidentsaccordions">
+  <h3>Accidents</h3>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOneCharges">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneCharges">
+        Fuel policy
+      </button>
+    </h2>
+    <div id="collapseOneCharges" class="accordion-collapse collapse" data-bs-parent="#chargesfuelaccordions">
+      <div class="accordion-body">
+Our standard fuel policy operates on a full-to-full basis — you’ll receive the vehicle with a full tank and should return it the same way. This ensures that you only pay for the fuel you actually use. If the car is returned with less fuel, a refueling charge may apply. Always keep your fuel receipt as proof.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwoCharges">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoCharges">
+        Extra mileage charges
+      </button>
+    </h2>
+    <div id="collapseTwoCharges" class="accordion-collapse collapse" data-bs-parent="#chargesfuelaccordions">
+      <div class="accordion-body">
+Most of our rentals include a specific mileage allowance. If you exceed this limit, an additional charge per kilometer or mile will apply. The mileage policy is clearly displayed during booking, so we recommend reviewing it before confirming your reservation to avoid unexpected costs.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThreeCharges">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeCharges">
+        Toll and road fees
+      </button>
+    </h2>
+    <div id="collapseThreeCharges" class="accordion-collapse collapse" data-bs-parent="#chargesfuelaccordions">
+      <div class="accordion-body">
+Tolls, congestion fees, and road charges are generally not included in the base rental price. Some vehicles come equipped with an automatic toll payment device, which conveniently deducts charges directly from your account. Manual tolls can be paid on-site, and receipts should be retained for reference.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFourCharges">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourCharges">
+        Refueling service charge
+      </button>
+    </h2>
+    <div id="collapseFourCharges" class="accordion-collapse collapse" data-bs-parent="#chargesfuelaccordions">
+      <div class="accordion-body">
+If you return the vehicle without refueling it to the original level, a refueling service charge will be applied. This fee covers both the cost of the missing fuel and the service time. To avoid this, always fill up the tank before returning the vehicle and keep your fuel receipt for confirmation.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFiveCharges">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveCharges">
+        Deposit and security hold
+      </button>
+    </h2>
+    <div id="collapseFiveCharges" class="accordion-collapse collapse" >
+      <div class="accordion-body">
+A refundable security deposit is usually required at the start of your rental. This amount is temporarily held on your card and released once the vehicle is returned in good condition. The release time depends on your bank or card provider, usually within 5–10 business days.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSixCharges">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixCharges">
+        Late return fees
+      </button>
+    </h2>
+    <div id="collapseSixCharges" class="accordion-collapse collapse" data-bs-parent="#chargesfuelaccordions">
+      <div class="accordion-body">
+Returning your vehicle later than the agreed time may incur additional charges. These fees are calculated per hour or day, depending on the delay. If you anticipate a delay, please contact us in advance to make arrangements and minimize any extra costs.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSevenCharges">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenCharges">
+        Damage and cleaning fees
+      </button>
+    </h2>
+    <div id="collapseSevenCharges" class="accordion-collapse collapse" data-bs-parent="#chargesfuelaccordions">
+      <div class="accordion-body">
+Vehicles should be returned in clean and good condition. In cases where excessive dirt, stains, or damages are found, cleaning or repair fees may apply. These charges are transparently listed in your rental agreement, and you will always be notified before any deductions are made.      </div>
+    </div>
+  </div>
+
+</div>
+<div class="accordioncomponentcontainer accordion" id="businessaccordions">
+  <h3>Business</h3>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOneBusiness">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneBusiness">
+        Corporate rental programs
+      </button>
+    </h2>
+    <div id="collapseOneBusiness" class="accordion-collapse collapse" data-bs-parent="#businessaccordions">
+      <div class="accordion-body">
+Our corporate rental programs are designed for businesses that require frequent travel or vehicle use. These programs offer discounted rates, priority support, and flexible billing options. Companies can register easily and manage multiple drivers under one corporate account.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwoBusiness">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoBusiness">
+        Monthly business plans
+      </button>
+    </h2>
+    <div id="collapseTwoBusiness" class="accordion-collapse collapse" data-bs-parent="#businessaccordions">
+      <div class="accordion-body">
+Our monthly business plans offer cost-effective long-term rental solutions for companies. These plans include regular maintenance, insurance, and vehicle replacements when needed. They are ideal for small teams, startups, and logistics providers needing short-term fleet management.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThreeBusiness">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeBusiness">
+        Fleet management solutions
+      </button>
+    </h2>
+    <div id="collapseThreeBusiness" class="accordion-collapse collapse" data-bs-parent="#businessaccordions">
+      <div class="accordion-body">
+We provide customized fleet management solutions to help companies optimize their transportation operations. From vehicle tracking and maintenance to driver scheduling and analytics, our fleet services are built to improve efficiency and reduce operational costs.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFourBusiness">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourBusiness">
+        Business travel discounts
+      </button>
+    </h2>
+    <div id="collapseFourBusiness" class="accordion-collapse collapse" data-bs-parent="#businessaccordions">
+      <div class="accordion-body">
+We offer special discounts for business travelers and partner companies. These include reduced daily rates, free vehicle upgrades, and dedicated account management for easier bookings. Members also earn loyalty points redeemable for future rentals.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFiveBusiness">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveBusiness">
+        Employee car leasing
+      </button>
+    </h2>
+    <div id="collapseFiveBusiness" class="accordion-collapse collapse" data-bs-parent="#businessaccordions">
+      <div class="accordion-body">
+Employee car leasing is available for businesses seeking long-term vehicle solutions for their teams. We manage contracts, maintenance, and renewals, allowing your company to provide transportation benefits without the hassle of ownership.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSixBusiness">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixBusiness">
+        Business account billing
+      </button>
+    </h2>
+    <div id="collapseSixBusiness" class="accordion-collapse collapse" data-bs-parent="#businessaccordions">
+      <div class="accordion-body">
+With our business account billing system, companies receive a consolidated monthly invoice for all rentals. This eliminates the need for multiple payments and simplifies expense tracking. Detailed reports are available for transparency and auditing.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSevenBusiness">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenBusiness">
+        Partnership opportunities
+      </button>
+    </h2>
+    <div id="collapseSevenBusiness" class="accordion-collapse collapse" data-bs-parent="#businessaccordions">
+      <div class="accordion-body">
+We collaborate with travel agencies, corporate service providers, and logistics firms through partnership programs. These partnerships include special commissions, co-branded offers, and shared marketing benefits. Contact us to explore collaboration opportunities.      </div>
+    </div>
+  </div>
+
+</div>
+<div class="accordioncomponentcontainer accordion" id="freightaccordions">
+  <h3>Freight</h3>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOneFreight">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneFreight">
+        Freight transportation services
+      </button>
+    </h2>
+    <div id="collapseOneFreight" class="accordion-collapse collapse" data-bs-parent="#freightaccordions">
+      <div class="accordion-body">
+Our freight transportation services cover domestic and international logistics for all cargo sizes. We ensure timely deliveries with real-time tracking and efficient route management. Our network of carriers allows flexible options to meet different freight requirements.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwoFreight">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoFreight">
+        Cargo insurance
+      </button>
+    </h2>
+    <div id="collapseTwoFreight" class="accordion-collapse collapse" data-bs-parent="#freightaccordions">
+      <div class="accordion-body">
+We provide comprehensive cargo insurance options to safeguard your shipments against loss, theft, or damage. Our coverage plans are customizable depending on the cargo type and route, ensuring your goods are fully protected during transit.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThreeFreight">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeFreight">
+        Shipping documentation
+      </button>
+    </h2>
+    <div id="collapseThreeFreight" class="accordion-collapse collapse" data-bs-parent="#freightaccordions">
+      <div class="accordion-body">
+We handle all shipping documentation, including bills of lading, customs papers, and delivery confirmations. Our logistics team ensures your documents comply with all international trade regulations to prevent any shipment delays.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFourFreight">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourFreight">
+        Freight tracking
+      </button>
+    </h2>
+    <div id="collapseFourFreight" class="accordion-collapse collapse" data-bs-parent="#freightaccordions">
+      <div class="accordion-body">
+With our advanced tracking system, you can monitor your freight in real time from pickup to delivery. You’ll receive live status updates, estimated arrival times, and notifications about any changes during transportation.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFiveFreight">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveFreight">
+        International shipping
+      </button>
+    </h2>
+    <div id="collapseFiveFreight" class="accordion-collapse collapse" data-bs-parent="#freightaccordions">
+      <div class="accordion-body">
+Our international freight services connect you to major ports and destinations worldwide. We offer sea, air, and land freight options with customs support, warehouse storage, and door-to-door delivery for global logistics efficiency.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSixFreight">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixFreight">
+        Packaging and handling
+      </button>
+    </h2>
+    <div id="collapseSixFreight" class="accordion-collapse collapse" data-bs-parent="#freightaccordions">
+      <div class="accordion-body">
+Proper packaging is essential for freight safety. Our team offers professional packing, labeling, and cargo securing services tailored to your goods. We ensure compliance with international shipping standards for safe delivery.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSevenFreight">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenFreight">
+        Delivery timelines
+      </button>
+    </h2>
+    <div id="collapseSevenFreight" class="accordion-collapse collapse" data-bs-parent="#freightaccordions">
+      <div class="accordion-body">
+We prioritize efficiency in every shipment by providing accurate delivery timelines and reliable service commitments. Our freight experts coordinate with carriers to ensure your cargo reaches its destination on schedule, minimizing delays and costs.      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="accordioncomponentcontainer accordion" id="helpaccordions">
+  <h3>Help</h3>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOneHelp">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneHelp">
+        How to contact support
+      </button>
+    </h2>
+    <div id="collapseOneHelp" class="accordion-collapse collapse" data-bs-parent="#helpaccordions">
+      <div class="accordion-body">
+If you need assistance, you can reach our support team through email, live chat, or phone. Our customer service is available 24/7 to help you with technical issues, account inquiries, or general questions about our services. We aim to respond to all requests as quickly as possible.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwoHelp">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoHelp">
+        Troubleshooting login issues
+      </button>
+    </h2>
+    <div id="collapseTwoHelp" class="accordion-collapse collapse" data-bs-parent="#helpaccordions">
+      <div class="accordion-body">
+If you’re unable to log in, first ensure your credentials are correct and that your internet connection is stable. Try resetting your password or clearing your browser cache. If the issue persists, contact our support team to verify your account and restore access.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThreeHelp">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeHelp">
+        How to reset your password
+      </button>
+    </h2>
+    <div id="collapseThreeHelp" class="accordion-collapse collapse" data-bs-parent="#helpaccordions">
+      <div class="accordion-body">
+To reset your password, click on “Forgot Password” on the login page and follow the steps sent to your registered email. Make sure to choose a strong password that combines letters, numbers, and symbols for improved account security.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFourHelp">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourHelp">
+        Reporting a technical problem
+      </button>
+    </h2>
+    <div id="collapseFourHelp" class="accordion-collapse collapse" data-bs-parent="#helpaccordions">
+      <div class="accordion-body">
+If you encounter any bugs or technical issues, please provide a detailed description of the problem along with screenshots if possible. This helps our team quickly identify and resolve the issue. You can report problems directly from your account dashboard or through our contact page.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFiveHelp">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveHelp">
+        Account verification process
+      </button>
+    </h2>
+    <div id="collapseFiveHelp" class="accordion-collapse collapse" data-bs-parent="#helpaccordions">
+      <div class="accordion-body">
+To verify your account, please follow the instructions in the verification email sent after registration. In some cases, you may be required to provide additional documents for identity confirmation. Verification helps ensure account safety and compliance with our service policies.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSixHelp">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixHelp">
+        Updating your account information
+      </button>
+    </h2>
+    <div id="collapseSixHelp" class="accordion-collapse collapse" data-bs-parent="#helpaccordions">
+      <div class="accordion-body">
+You can update your personal or billing details directly from your account settings page. Make sure to review your information regularly to ensure accuracy. If you face any difficulty saving changes, please reach out to our support team for assistance.      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSevenHelp">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenHelp">
+        How to delete your account
+      </button>
+    </h2>
+    <div id="collapseSevenHelp" class="accordion-collapse collapse" data-bs-parent="#helpaccordions">
+      <div class="accordion-body">
+If you wish to delete your account, go to the Account Settings section and select “Delete Account.” Please note that this action is permanent and all your data will be removed from our system. You can contact support beforehand if you’d like to discuss alternatives such as account deactivation.      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<div class="searchedwordsresult">
+
+</div>
+
+
+
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="container-fluid">
+    <div class="row gap-5">
+      
+      <div class="col-12 d-flex justify-content-between align-items-center w-100">
+        <img src="../../assets/images/whitelogo.png" alt="Logo">
+
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle center gap-2 h-100 btn btn-link text-white text-decoration-none"
+            type="button"
+            id="languageDropdown"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            English
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+            <li>
+              <a class="dropdown-item d-flex align-items-center gap-2" href="./faqs.html">
+                <img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/flags/united-kingdom-flag.png" alt="English flag">
+                <p class="mb-0">English</p>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center gap-2" href="../arabic/rtlFaqs.html">
+                <img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/flags/saudi-arabia-flag.png" alt="Arabic flag">
+                <p class="mb-0">Arabic</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 d-flex gap-3 flex-wrap">
+        <img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/app-store.png" alt="App Store">
+        <img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/google-play.png" alt="Google Play">
+      </div>
+
+      <div class="col-12">
+        <div class="gryaline"></div>
+      </div>
+
+      <div class="col-12">
+        <div class="row gap-5 gap-md-0">
+          <div class="col">
+            <h1>Personal Use</h1>
+            <p>Chauffeur</p>
+            <p>Carsharing</p>
+            <p>Car Rental</p>
+            <p>My Car Rental Bookings</p>
+          </div>
+
+          <div class="col">
+            <h1>Business Solutions</h1>
+            <p>Last Mile</p>
+            <p>Group Transportation</p>
+            <p>Car Trading</p>
+            <p>Linehaul & Cross Border</p>
+            <p>Operating Lease</p>
+          </div>
+
+          <div class="col-12 d-block d-md-none">
+            <div class="gryaline col-12"></div>
+          </div>
+
+          <div class="col">
+            <h1>About Us</h1>
+            <p>Career</p>
+            <p>Newsroom</p>
+          </div>
+
+          <div class="col">
+            <h1>Support</h1>
+            <p>FAQ</p>
+            <p>Contact Us</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 iso text-center">
+        <img src="https://storage.googleapis.com/shift-website-dvlp/landing/assets/img/what-is-iso.png" alt="ISO Certified">
+      </div>
+
+      <div class="col-12">
+        <div class="gryaline"></div>
+      </div>
+
+      <div class="col-12 d-flex flex-column align-items-center justify-content-center gap-3">
+        <p>Follow us</p>
+        <div class="socialcontainer d-flex gap-3">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="d-flex gap-4 w-100 justify-content-center">
+          <p>Terms and Conditions</p>
+          <p>Privacy Policy</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../home.js"></script>
+
+</body>
+
+</html>
