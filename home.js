@@ -402,10 +402,10 @@ if(conactusdropdown.classList.contains("dropdownshow")) {
 conactusdropdown.classList.remove("dropdownshow")
 }
 else{
-    conactusdropdown.classList.add("dropdownshow");
-}
-  
-});
+
+  conactusdropdown.classList.add("dropdownshow");
+
+  }});
 
 document.addEventListener("click", (e) => {
   if (
@@ -435,7 +435,6 @@ window.addEventListener("scroll", () => {
 const searchinput = document.getElementById("search");
 const accordionscontainers = document.querySelectorAll(".accordioncomponentcontainer");
 const divs = document.querySelectorAll(".accordion-item");
-const firstcontainer = document.getElementById("billingaccordions");
 
 function clearHighlights() {
   document.querySelectorAll("mark").forEach(mark => {
@@ -479,7 +478,6 @@ searchinput.addEventListener("input", () => {
           bodyParagraph.innerHTML = highlightedBody;
         }
 
-        console.log("Header after highlight:", header.innerHTML);
       } else {
         header.innerHTML = header.textContent;
         if (bodyParagraph) {
@@ -510,9 +508,17 @@ searchinput.addEventListener("input", () => {
       }
     });
 
-    accordionscontainers.forEach(container => container.classList.remove("show"));
-    firstcontainer.classList.add("show");
-  }
+        console.log("empty input ")
+const activetab = document.querySelector(".tabcomponent.active")
+if(!activetab) return;
+
+const targetid = activetab.getAttribute("data-bs-target")
+accordionscontainers.forEach(groupd => groupd.classList.remove("show"))
+  
+const targetgroup = document.querySelector(targetid)
+if(targetgroup) targetgroup.classList.add("show")
+
+}
 });
 
 
